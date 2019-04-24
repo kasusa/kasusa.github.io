@@ -1,0 +1,113 @@
+/*2019/4/19 13:30:58 */
+body{
+    color: #555;
+    margin: 0;
+    font-family: Comic Sans MS,'Montserrat',sans-serif;
+}
+a {
+ color: #1abc9c;
+ text-decoration: none;
+}
+a:hover {
+ color: rgb(226, 151, 31);
+}
+
+#lab_header{
+    background-color: #E67CA1;
+    height: 150px;
+    line-height: 150px;
+}
+#lab_header a{
+    font-family:Gloucester MT;
+    text-shadow: 2px 0px 2px red ,-2px 0px 2px blue;
+    font-size: 35px;
+    color: azure;
+    text-decoration: none;
+
+    margin-left:20px ;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    
+    transition: 0.4s;
+}
+#lab_header a:hover{
+    color: rgb(14, 13, 13);
+    text-shadow: 16px -3px red ,-16px 2px blue;
+    transition: 0.4s;
+}
+#lab_header-title{
+    display: block;
+    float: left;
+    font-weight: bold ;
+    font-size: 20px;
+}
+#lab_header-nav{
+    display: block;
+    float: right;
+    margin-top: 0px;
+}
+#lab_header-nav li{
+    display:inline;
+    padding-left: 20px;
+    margin-right: 20px;
+}
+#go-home-button{
+ opacity:1;
+ transition: 0.2s;
+}
+#go-home-button:hover{
+    filter:invert(90%);
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  background-color: white;
+  margin-left:5% ;
+  margin-top: 5%;
+  width:300px;
+  box-shadow: 2px 6px 25px 2px  rgba(0, 0, 0, 0.192);
+  transition: 0.4s;
+  float: left;
+  border-radius: 5px;
+}
+img {
+  border-radius: 5px 5px 0 0;
+}
+.cardname{
+    font-size: 120%;
+}
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 4px 9px 25px 5px  rgba(0, 0, 0, 0.363);
+  color: white;
+
+}
+    .kasusa:hover {
+    box-shadow: 4px 9px 25px 12px  #E77CA2;
+      background-color: rgba(0, 0, 0, 0.774);
+    }
+    .ceres:hover {
+    box-shadow: 4px 9px 25px 12px  #8BC384;
+      background-color: rgba(0, 0, 0, 0.774);
+
+    }
+/* Add some padding inside the card container */
+.box_container {
+  padding: 2px 16px;
+}
+
+/*card 2*/
+.card2 {
+  /* Add shadows to create the "card" effect */
+  background-color: white;
+  margin-left:5% ;
+  margin-top: 5%;
+  width:300px;
+  box-shadow: 2px 6px 25px 2px  rgba(0, 0, 0, 0.39);
+  transition: 0.4s;
+  float: left;
+}
+.card a{
+    color: #555;
+    text-decoration: none;
+}
