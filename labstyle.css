@@ -33,7 +33,7 @@ a:hover {
 #lab_header a:hover{
     color: rgb(14, 13, 13);
     text-shadow: 16px -3px red ,-16px 2px blue;
-    transition: 0.4s;
+    
 }
 #lab_header-title{
     display: block;
@@ -54,9 +54,10 @@ a:hover {
 #go-home-button{
  opacity:1;
  transition: 0.2s;
+ filter:invert(90%);
 }
 #go-home-button:hover{
-    filter:invert(90%);
+    filter:invert(0%);
 }
 
 .card {
