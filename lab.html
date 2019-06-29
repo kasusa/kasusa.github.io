@@ -4,20 +4,39 @@
 
 <head>
     <title>Kasusa's lab!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- <meta name="viewport" content="user-scalable=no, width=device-width,initial-scale=1.0, maximum-scale=1.0"> -->
     <link rel="stylesheet" type="text/css" href="css/labstyle.css">
+    <!-- <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"> -->
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
+
     <div id="lab_header">
-        <div class="container">
-            <a id="lab_header-title" href="lab.html">Kasusa's  laboratory</a>
-            <ul id="lab_header-nav">
-                <li>
-                    <a id="go-home-button" href="index.html"><img src="images/home-black.png" alt="主界面" height="32" width="35"></a>
-                </li>
-            </ul>
+        <div class="ristrict">
+            <h1 id="lab_header-title "><a href="#">Kasusa's laboratory</a></h1>
+        </div>
+
+    </div>
+    <div class="non-ristrict sticky-top pink">
+        <div class="ristrict">
+            <nav class="navbar navbar-expand-sm navbar-dark  pink ">
+                <span class="navbar-text text-uppercase">kasusa ||</span>
+                <ul class="navbar-nav justify-content-end">
+                    <li class="nav-item"><a class="nav-link" href="signin.html">登录</a></li>
+                </ul>
+            </nav>
         </div>
     </div>
+
     <!--把新的卡放在这里！-->
     <div class="container">
         <div class="kasusa card">
@@ -48,7 +67,7 @@
 
         <div class="html5 card">
             <a href="unimportant_sites/html5标志.html">
-                <img src="images/html5.png" alt="Ceres" style="width:100%">
+                <img src="images/html5-512x512.png" alt="Ceres" style="width:100%">
                 <div class="box_container">
                     <p class="cardname"><b>html5</b></p>
                     <p class="shining">made of div!</p>
@@ -56,9 +75,57 @@
             </a>
         </div>
 
-    </div>
+        <div class="canvas 画板 card">
+            <a href="unimportant_sites/canvas_drawing.html">
+                <img src="images/canvas-100x100.png" alt="Ceres" style="width:100%">
+                <div class="box_container">
+                    <p class="cardname"><b>CANVAS 画图</b></p>
+                    <p class="shining">使用简单的界面和工具画图吧！</p>
+                </div>
+            </a>
+        </div>
+
+        <div class=" card">
+            <a href="unimportant_sites/music.html">
+                <img src="images/spiderman.jpg" alt="music
+                " style="width:100%">
+                <div class="box_container">
+                    <p class="cardname"><b>spider-man 🎵</b></p>
+                    <p class="shining">spider-man mutiuniverse!</p>
+                </div>
+            </a>
+        </div>
+
+        <div class=" card">
+            <a href="unimportant_sites/video.html">
+                <img src="images/video.jpg" alt="video
+                " style="width:100%">
+                <div class="box_container">
+                    <p class="cardname"><b>cyberpunk2077🎞</b></p>
+                    <p class="shining">一款明年即将推出的大作</p>
+                </div>
+            </a>
+        </div>
+
+        <div class=" card">
+            <a href="unimportant_sites/PAP.html">
+                <img src="images/papbooks.png" alt="papbooks
+                " style="width:100%">
+                <div class="box_container">
+                    <p class="cardname"><b>在人类消失以后</b></p>
+                    <p class="shining">优秀的小马同人书籍</p>
+                </div>
+            </a>
+        </div>
 
     </div>
+
+    <div id="footer">
+        <div class="container" style="color: aliceblue">
+            <span style="color: rgb(169, 255, 255)">@ </span>allrights reserved 2019
+        </div>
+    </div>
+
 </body>
 
 </html>

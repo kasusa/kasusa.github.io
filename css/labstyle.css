@@ -15,10 +15,15 @@ a:hover {
     color: rgb(226, 151, 31);
 }
 
+.pink {
+    background-color: rgb(221, 114, 151);
+}
+
 #lab_header {
-    background-color: #E67CA1;
-    height: 150px;
+    background-color: rgb(255, 139, 180);
+    height: 200px;
     line-height: 150px;
+    padding: 4em;
 }
 
 #lab_header a {
@@ -27,7 +32,7 @@ a:hover {
     font-size: 35px;
     color: azure;
     text-decoration: none;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     text-transform: uppercase;
     letter-spacing: 0.2em;
     transition: 0.4s;
@@ -43,6 +48,16 @@ a:hover {
     float: left;
     font-weight: bold;
     font-size: 20px;
+}
+
+.ristrict {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.non-ristrict {
+    max-width: 100%;
+    margin: auto;
 }
 
 #lab_header-nav {
@@ -67,20 +82,16 @@ a:hover {
     filter: invert(0%);
 }
 
-.container {
-    max-width: 1000px;
-    margin: auto;
-}
-
 .card {
     /* Add shadows to create the "card" effect */
     background-color: white;
-    width: 30%;
+    width: 100%;
     margin: 1.6%;
     float: left;
     box-shadow: 2px 6px 25px 2px rgba(0, 0, 0, 0.192);
     transition: 0.4s;
     border-radius: 5px;
+    transition-timing-function: cubic-bezier(0.15, 0.87, 0.36, 0.93);
 }
 
 img {
@@ -110,6 +121,10 @@ img {
     background-color: rgba(0, 0, 0, 0.774);
 }
 
+.card:active {
+    transform: scale(0.9);
+}
+
 
 /* Add some padding inside the card container */
 
@@ -125,11 +140,47 @@ img {
     text-decoration: none;
 }
 
-.small img {
-    float: right;
-    width: 12vw;
+@media (min-width: 320px) {
+    .card {
+        width: 95%;
+        margin-top: 2em;
+    }
 }
 
-.small div {
+@media (min-width: 414px) {
+    .card {
+        margin-top: 1em;
+        width: 45%;
+    }
+}
+
+@media (min-width: 960px) {
+    .card {
+        width: 30%;
+    }
+}
+
+#footer {
+    margin-top: 4em;
     clear: both;
+    background-color: #2f2f2f;
+    padding: 50px 0;
+}
+
+#footer h4 {
+    color: #c4f0e7;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+#footer p {
+    color: #f3f7f6cb;
+}
+
+.column {
+    margin-left: 20px;
+    margin-right: 20px;
+    min-width: 300px;
+    display: inline-block;
+    vertical-align: top;
 }
