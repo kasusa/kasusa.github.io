@@ -1,0 +1,170 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+        function myFunction(idname) {
+            var id = idname;
+            var copyText = document.getElementById('myInput' + id);
+            copyText.select();
+            document.execCommand("copy");
+
+            var tooltip = document.getElementById("myTooltip" + id);
+            tooltip.innerHTML = "Copied: \n" + copyText.value;
+        }
+
+        function outFunc() {
+            var tooltip = document.getElementById("myTooltip1");
+            tooltip.innerHTML = "Copy to clipboard";
+            var tooltip = document.getElementById("myTooltip2");
+            tooltip.innerHTML = "Copy to clipboard";
+        }
+    </script>
+
+    <style>
+        
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            min-width: 140px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            bottom: 150%;
+            left: 50%;
+            margin-left: -75px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .tooltip .tooltiptext::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .cantsee {
+            opacity: 0;
+            z-index: -10;
+        }
+
+        a {
+            color: palevioletred;
+            text-decoration: none;
+        }
+
+        .linkbox {
+            font-size: 16px;
+            background-color: #fce993a1;
+            padding: 0.2em 0.7em;
+            border: solid 1px #0000001f;
+            box-shadow: 0 0 20px 1px #00000026;
+            border-radius: 10px;
+            transition: 0.3s;
+            color: #d1893d;
+        }
+
+        html {
+            height: 100%;
+            background-color: #FBAB7E;
+            background-image: -webkit-linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+            background-image: -moz-linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+            background-image: -o-linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+            background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+        }
+
+        .centerscreen {
+            position: fixed;
+            /* or absolute */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .card {
+            padding: 1em;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+            background-color: rgba(255, 255, 255, 0.926);
+            margin-bottom: 2em;
+            margin-top: 2em;
+        }
+
+        .card button {
+            border: none;
+            outline: 0;
+            padding: 12px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+        }
+
+        .card button:hover {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <div class="card ">
+            <!-- <img src="https://cn.bing.com/th?id=OIP.rRiWctghHdnyaMQPjSQm1AHaDx&pid=Api&rs=1" alt="Denim Jeans" style="width:100%"> -->
+            <h1>Ohssr</h1>
+            <a class="linkbox" href=" http://ohssr.pw/">ohssr.pw</a><br>
+            <!-- 放在这里！put link here！ -->
+            <p>即将到期</p>
+            <input class="cantsee" type="text" value="http://ohssr.pw/link/YCAxd4bAdFoJ0ek3" id="myInput1">
+            <br>
+            <div class="tooltip">
+                <button onclick="myFunction('1')" onmouseout="outFunc()">
+                    <span class="tooltiptext" id="myTooltip1">Copy to clipboard</span>
+                    Copy
+                </button>
+            </div><br>
+
+    </div>
+    <div class="card ">
+
+        <h1>AAEX</h1>
+        <a class="linkbox" href=" https://aaex.uk/clientarea.php">aaex.uk</a><br>
+        <!-- 放在这里！put link here！ -->
+        <input class="cantsee" type="text" value="https://api.crhnode.top/subscribe/26490/nyCEMfT8Cje/ssr/" id="myInput2">
+        <br>
+        <div class="tooltip">
+            <button onclick="myFunction('2')" onmouseout="outFunc()">
+                <span class="tooltiptext" id="myTooltip2">Copy to clipboard</span>
+                Copy 
+            </button>
+            <br>
+        </div>
+    </div>
+
+</body>
+
+
+</html>
