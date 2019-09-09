@@ -18,6 +18,11 @@ a:hover {
 .pink {
     background-color: rgb(221, 114, 152);
 }
+.transparent_pink{
+    background-color: rgba(221, 114, 152, 0.7);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+}
 
 #lab_header {
     background-color: rgb(255, 139, 180);
