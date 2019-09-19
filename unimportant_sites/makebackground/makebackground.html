@@ -75,8 +75,8 @@
             <center>
                 <img id="selected_img" src="" alt="">
                 <br><br>
-                
-                <a href="#" class="button button-3d button-royal" onclick="changebackground()">GO</a>
+                <a class="button button-3d button-royal" onclick="openFullscreen();">Fullscreen</a>
+                <a class="button button-3d button-royal" onclick="changebackground()">GO</a>
             </center>
             
     </div>
@@ -84,6 +84,19 @@
 
 </body>
     <script>
+        var elem = document.documentElement;
+            function openFullscreen() {
+                if (elem.requestFullscreen) {
+                    elem.requestFullscreen();
+                } else if (elem.mozRequestFullScreen) { /* Firefox */
+                    elem.mozRequestFullScreen();
+                } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+                    elem.webkitRequestFullscreen();
+                } else if (elem.msRequestFullscreen) { /* IE/Edge */
+                    elem.msRequestFullscreen();
+                }
+            }
+
     var status = "not uploaded"
     var img = document.getElementById('selected_img'),
     preview;
