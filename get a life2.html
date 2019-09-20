@@ -24,7 +24,28 @@
     </script>
 
     <style>
-        
+        .tou{
+
+            border-radius: 5px;
+            color: rgba(0, 0, 0, 0.55);
+            text-shadow:0 0 15px rgba(0, 0, 0, 0.493);
+
+            
+        }
+        .dot{
+            height: 0.5em;
+            width: 0.5em;
+            border-radius: 50%;
+        }
+        .red{
+            background-color: rgba(243, 56, 56, 0.926) ;
+        }
+        .blue{
+        background-color: rgb(66, 201, 255);
+        }
+        .green{
+        background-color: rgba(9, 184, 40, 0.926);
+        }
         .tooltip {
             position: relative;
             display: inline-block;
@@ -91,6 +112,7 @@
             background-image: -moz-linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
             background-image: -o-linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
             background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+             background-attachment: fixed;
         }
 
         .centerscreen {
@@ -134,24 +156,8 @@
 
 <body>
 
-    <div class="card "style="    background-color: rgba(226, 123, 123, 0.926);">
-            <!-- <img src="https://cn.bing.com/th?id=OIP.rRiWctghHdnyaMQPjSQm1AHaDx&pid=Api&rs=1" alt="Denim Jeans" style="width:100%"> -->
-            <h1>Ohssr</h1>
-            <a class="linkbox" href=" http://ohssr.pw/">ohssr.pw</a><br>
-            <!-- 放在这里！put link here！ -->
-            <p>已经到期</p>
-            <input class="cantsee" type="text" value="http://ohssr.pw/link/YCAxd4bAdFoJ0ek3" id="myInput1">
-            <br>
-            <!-- <div class="tooltip">
-                <button onclick="myFunction('1')" onmouseout="outFunc()">
-                    <span class="tooltiptext" id="myTooltip1">Copy to clipboard</span>
-                    Copy
-                </button>
-            </div><br> -->
-
-    </div>
     <div class="card ">
-
+        <div class="blue dot"></div>
         <h1>AAEX</h1>
         <a class="linkbox" href=" https://aaex.uk/clientarea.php">aaex.uk</a><br>
         <!-- 放在这里！put link here！ -->
@@ -165,8 +171,8 @@
             <br>
         </div>
     </div>
-
     <div class="card ">
+        <div class="green dot"></div>
         <h1>羊王ssr</h1>
         <a class="linkbox" href=" https://wohaobang.cn/">我好棒.cn</a><br>
         <!-- 放在这里！put link here！ -->
@@ -181,7 +187,30 @@
             <br>
         </div>
     </div>
+    <div class="card ">
+        <div class="red dot"></div>
+        <h1>M78 Cloud</h1>
+        <a class="linkbox" href=" https://m87cloud.com/user">m87cloud.com</a><br>
+        <!-- 放在这里！put link here！ -->
+        <p class="tou">即将开始购买</p>
+    </div>
+    <div class="red card ">
+        <!-- <img src="https://cn.bing.com/th?id=OIP.rRiWctghHdnyaMQPjSQm1AHaDx&pid=Api&rs=1" alt="Denim Jeans" style="width:100%"> -->
+        <div class="red dot"></div>
+        <h1>Ohssr</h1>
+        <a class="linkbox" href=" http://ohssr.pw/">ohssr.pw</a><br>
+        <!-- 放在这里！put link here！ -->
+        <p class="tou">已经到期</p>
+        <input class="cantsee" type="text" value="http://ohssr.pw/link/YCAxd4bAdFoJ0ek3" id="myInput1">
+        <br>
+        <!-- <div class="tooltip">
+                <button onclick="myFunction('1')" onmouseout="outFunc()">
+                    <span class="tooltiptext" id="myTooltip1">Copy to clipboard</span>
+                    Copy
+                </button>
+            </div><br> -->
 
+    </div>
 </body>
 
 
