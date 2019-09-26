@@ -25,35 +25,40 @@
     </script>
 
     <style>
-        .tou{
-
+        .tou {
             border-radius: 5px;
             color: rgba(0, 0, 0, 0.55);
-            text-shadow:0 0 15px rgba(0, 0, 0, 0.493);
+            text-shadow: 0 0 15px rgba(0, 0, 0, 0.493);
         }
-        .dot{
+        
+        .dot {
             border: 3px solid rgba(85, 85, 85, 0.452);
             height: 0.8em;
             width: 0.8em;
             border-radius: 50%;
         }
-        .yellow{
-            background-color: rgb(243, 157, 20) ;
+        
+        .yellow {
+            background-color: rgb(243, 157, 20);
         }
-        .red{
-            background-color: rgba(243, 56, 56, 0.926) ;
+        
+        .red {
+            background-color: rgba(243, 56, 56, 0.926);
         }
-        .blue{
-        background-color: rgb(66, 201, 255);
+        
+        .blue {
+            background-color: rgb(66, 201, 255);
         }
-        .green{
-        background-color: rgba(9, 184, 40, 0.926);
+        
+        .green {
+            background-color: rgba(9, 184, 40, 0.926);
         }
+        
         .tooltip {
             position: relative;
             display: inline-block;
         }
-
+        
         .tooltip .tooltiptext {
             visibility: hidden;
             min-width: 140px;
@@ -70,7 +75,7 @@
             opacity: 0;
             transition: opacity 0.3s;
         }
-
+        
         .tooltip .tooltiptext::after {
             content: "";
             position: absolute;
@@ -81,33 +86,33 @@
             border-style: solid;
             border-color: #555 transparent transparent transparent;
         }
-
+        
         .tooltip:hover .tooltiptext {
             visibility: visible;
             opacity: 1;
         }
-
+        
         .cantsee {
             opacity: 0;
             z-index: -10;
         }
-
+        
         a {
             color: palevioletred;
             text-decoration: none;
         }
-
+        
         .linkbox {
             font-size: 16px;
-            background-color: #fce993a1;
+            background-color: rgba(252, 233, 147, 0.63);
             padding: 0.2em 0.7em;
-            border: solid 1px #0000001f;
-            box-shadow: 0 0 20px 1px #00000026;
+            border: solid 1px rgba(0, 0, 0, 0.12);
+            box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.15);
             border-radius: 10px;
             transition: 0.3s;
-            color: #d1893d;
+            color: rgb(209, 137, 61);
         }
-
+        
         html {
             height: 100%;
             background-color: #FBAB7E;
@@ -115,9 +120,9 @@
             background-image: -moz-linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
             background-image: -o-linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
             background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
-             background-attachment: fixed;
+            background-attachment: fixed;
         }
-
+        
         .centerscreen {
             position: fixed;
             /* or absolute */
@@ -125,7 +130,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
         }
-
+        
         .card {
             padding: 1em;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -137,7 +142,7 @@
             margin-bottom: 2em;
             margin-top: 2em;
         }
-
+        
         .card button {
             border: none;
             outline: 0;
@@ -149,7 +154,7 @@
             width: 100%;
             font-size: 18px;
         }
-
+        
         .card button:hover {
             opacity: 0.7;
         }
@@ -176,7 +181,7 @@
                     <span class="tooltiptext" id="myTooltip2">Copy to clipboard</span>
                     Copy 
             </button>
-                <br>
+            <br>
         </div>
     </div>
     <div class="card ">
@@ -193,7 +198,7 @@
             <br>
         </div>
         <!-- 放在这里！put link here！ -->
-        
+
     </div>
     <div class="card ">
         <div class="yellow dot"></div>
