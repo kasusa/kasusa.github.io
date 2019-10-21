@@ -4,6 +4,7 @@
     <title>✈ 飞机坪</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1192938&size=128">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.207/distr/fira_code.css">
     <meta charset="UTF-8">
     <script type="text/javascript">
         function myFunction(idname) {
@@ -170,10 +171,37 @@
             /* cursor: pointer; */
             /* width: 100%; */
             font-size: 18px;
+            transition: 0.2s;
         }
 
         .card button:hover {
-            opacity: 0.7;
+            border: none;
+
+            /* outline: 0; */
+            padding: 5px 12px;
+            color: rgb(42, 42, 42);
+            border: solid 2px rgb(247, 200, 107);
+            background-color: rgb(255, 206, 142);
+            text-align: center;
+            /* cursor: pointer; */
+            /* width: 100%; */
+            font-size: 18px;
+        }
+
+        footer {
+            font-family: 'Fira Code', monospace;
+            height: 0px;
+            border-bottom: 24px rgba(0, 0, 0, 0.7) solid;
+            border-left: #ffffff00 30px solid;
+            position: fixed;
+            bottom: 0px;
+            right: -148px;
+            color: rgba(255, 255, 255, 0.54);
+        transition: 0.3s;
+        }
+        footer:hover{
+        right: 0px;
+
         }
     </style>
 </head>
@@ -245,6 +273,11 @@
             </div>
     </div>
     </details>
+    <center>
+        <footer>
+            @ 2019 --> kasusa
+        </footer>
+    </center>
 </body>
 
 
