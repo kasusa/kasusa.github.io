@@ -30,7 +30,7 @@
             color: rgba(0, 0, 0, 0.55);
             text-shadow: 0 0 15px rgba(0, 0, 0, 0.493);
         }
-        
+
         .dot {
             float: right;
             border: 3px solid rgba(85, 85, 85, 0.452);
@@ -38,28 +38,28 @@
             width: 0.8em;
             border-radius: 50%;
         }
-        
+
         .yellow {
             background-color: rgb(243, 157, 20);
         }
-        
+
         .red {
             background-color: rgba(243, 56, 56, 0.926);
         }
-        
+
         .blue {
             background-color: rgb(66, 201, 255);
         }
-        
+
         .green {
             background-color: rgba(9, 184, 40, 0.926);
         }
-        
+
         .tooltip {
             position: relative;
             display: inline-block;
         }
-        
+
         .tooltip .tooltiptext {
             visibility: hidden;
             min-width: 140px;
@@ -76,7 +76,7 @@
             opacity: 0;
             transition: opacity 0.3s;
         }
-        
+
         .tooltip .tooltiptext::after {
             content: "";
             position: absolute;
@@ -87,22 +87,22 @@
             border-style: solid;
             border-color: #555 transparent transparent transparent;
         }
-        
+
         .tooltip:hover .tooltiptext {
             visibility: visible;
             opacity: 1;
         }
-        
+
         .cantsee {
             opacity: 0;
             z-index: -10;
         }
-        
+
         a {
             color: palevioletred;
             text-decoration: none;
         }
-        
+
         .linkbox {
             font-size: 16px;
             background-color: rgba(252, 233, 147, 0.63);
@@ -113,7 +113,7 @@
             transition: 0.3s;
             color: rgb(209, 137, 61);
         }
-        
+
         html {
             height: 100%;
             background-color: #FBAB7E;
@@ -123,7 +123,7 @@
             background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
             background-attachment: fixed;
         }
-        
+
         .centerscreen {
             position: fixed;
             /* or absolute */
@@ -131,8 +131,9 @@
             left: 50%;
             transform: translate(-50%, -50%);
         }
+
         .widecard {
-            border-radius: 3px; 
+            border-radius: 3px;
             padding: 1em;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             max-width: 330px;
@@ -141,6 +142,7 @@
             background-color: rgba(255, 255, 255, 0.233);
             margin-bottom: 2em;
         }
+
         .card {
             padding: 1em;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -152,22 +154,24 @@
             margin-bottom: 2em;
             margin-top: 2em;
         }
-        .card:last-child{
+
+        .card:last-child {
             margin-bottom: 0.3em;
         }
-        
+
         .card button {
-            border: none;
-            outline: 0;
-            padding: 12px;
-            color: rgba(255, 255, 255, 0.781);
-            background-color: rgba(0, 0, 0, 0.856);
+            /* border: none; */
+            /* outline: 0; */
+            padding: 5px 12px;
+            color: rgb(249, 189, 115);
+            border: solid 2px rgb(0, 0, 0);
+            background-color: rgb(92, 70, 41);
             text-align: center;
-            cursor: pointer;
-            width: 100%;
+            /* cursor: pointer; */
+            /* width: 100%; */
             font-size: 18px;
         }
-        
+
         .card button:hover {
             opacity: 0.7;
         }
@@ -181,68 +185,66 @@
         <h1 class="tou">✈飞机坪</h1>
         <br>
     </center>
-    <div class="card m78">
-        <div class="blue dot" title="大部分时间可用"></div>
-        <h1>M78 Cloud</h1>
-        <a class="linkbox" href="https://m87cloud.top/user">m87cloud.top</a><br>
-        <input class="cantsee" type="text" value="https://sub1.m87sub.xyz/link/zU6AXH2RHkfuo0Sy?sub=1" id="myInputm78">
-        <br>
-        <div class="tooltip">
-            <button onclick="myFunction('m78')" onmouseout="outFunc()">
-                    <span class="tooltiptext" id="myTooltipm78">Copy to clipboard</span>
-                    Copy
-                </button>
-                <br>
-            </div>
-        </div>
 
-     <div class=" widecard">
-         <details>
-         <summary>非主要使用机场</summary>
-
-        <div class="card ">
-            <div class="blue dot" title="大部分时间可用"></div>
-            <h1>AAEX</h1>
-            <a class="linkbox" href=" https://aaex.uk/clientarea.php">aaex.uk</a><br>
-            <!-- 放在这里！put link here！ -->
-            <input class="cantsee" type="text" value="https://api.crhnode.top/subscribe/26490/nyCEMfT8Cje/ssr/" id="myInput2">
-            <br>
-            <!-- <p class="tou">基本挂了</p> -->
-            <div class="tooltip">
-                <button onclick="myFunction('2')" onmouseout="outFunc()">
-                        <span class="tooltiptext" id="myTooltip2">Copy to clipboard</span>
-                        Copy 
-                </button>
-                <br>
-            </div>
-        </div>
-            <!-- 放在这里！put link here！ -->
-
+    <!-- AAEX -->
     <div class="card ">
-        <div class="yellow dot" title="可用性一般，经常不能用"></div>
-        <h1>羊王ssr</h1>
-        <a class="linkbox" href=" https://wohaobang.cn/">我好棒.cn</a><br>
+        <div class="blue dot" title="大部分时间可用"></div>
+        <h1>AAEX</h1>
+        <a class="linkbox" href=" https://aaex.uk/clientarea.php">aaex.uk</a><br>
         <!-- 放在这里！put link here！ -->
-        <input class="cantsee" type="text" value="https://ssr.yangwang.tk/" id="myInput3">
+        <input class="cantsee" type="text" value="https://api.crhnode.top/subscribe/26490/nyCEMfT8Cje/ssr/"
+            id="myInput2">
         <br>
+        <!-- <p class="tou">基本挂了</p> -->
         <div class="tooltip">
-            <button onclick="myFunction('3')" onmouseout="outFunc()">
-                <span class="tooltiptext" id="myTooltip3">Copy to clipboard</span>
+            <button onclick="myFunction('2')" onmouseout="outFunc()">
+                <span class="tooltiptext" id="myTooltip2">Copy to clipboard</span>
                 Copy
             </button>
             <br>
         </div>
     </div>
 
-    <div class="red card " title="完全不可用">
-        <!-- <img src="https://cn.bing.com/th?id=OIP.rRiWctghHdnyaMQPjSQm1AHaDx&pid=Api&rs=1" alt="Denim Jeans" style="width:100%"> -->
-        <div class="red dot"></div>
-        <h1>Ohssr</h1>
-        <a class="linkbox" href=" http://ohssr.pw/">ohssr.pw</a><br>
-        <p class="tou">已经到期</p>
+    <div class=" widecard">
+
+        <details>
+            <summary>非主要使用机场</summary>
+            <!-- 放在这里！put link here！ -->
+            <div class="card m78">
+                <div class="red dot" title="大部分时间可用"></div>
+                <h1>M78 Cloud</h1>
+                <a class="linkbox" href="https://m87cloud.top/user">m87cloud.top</a><br>
+                <input class="cantsee" type="text" value="https://sub1.m87sub.xyz/link/zU6AXH2RHkfuo0Sy?sub=1"
+                    id="myInputm78">
+                <br>
+                <p class="tou">我没有续费……</p>
+            </div>
+
+            <div class="card ">
+                <div class="yellow dot" title="可用性一般，经常不能用"></div>
+                <h1>羊王ssr</h1>
+                <a class="linkbox" href=" https://wohaobang.cn/">我好棒.cn</a><br>
+                <!-- 放在这里！put link here！ -->
+                <input class="cantsee" type="text" value="https://ssr.yangwang.tk/" id="myInput3">
+                <br>
+                <div class="tooltip">
+                    <button onclick="myFunction('3')" onmouseout="outFunc()">
+                        <span class="tooltiptext" id="myTooltip3">Copy to clipboard</span>
+                        Copy
+                    </button>
+                    <br>
+                </div>
+            </div>
+
+            <div class="red card " title="完全不可用">
+                <!-- <img src="https://cn.bing.com/th?id=OIP.rRiWctghHdnyaMQPjSQm1AHaDx&pid=Api&rs=1" alt="Denim Jeans" style="width:100%"> -->
+                <div class="red dot"></div>
+                <h1>Ohssr</h1>
+                <a class="linkbox" href=" http://ohssr.pw/">ohssr.pw</a><br>
+                <p class="tou">已经到期</p>
+            </div>
     </div>
-</div>
-</details>  
+    </details>
 </body>
 
 
