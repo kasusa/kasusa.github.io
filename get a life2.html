@@ -98,10 +98,17 @@
             opacity: 0;
             z-index: -10;
         }
-
+        a:hover{
+            /* font-weight: normal; */
+            color: rgb(255, 255, 255);
+            text-shadow:0 0 12px rgb(255, 102, 102);
+        }
         a {
-            color: palevioletred;
-            text-decoration: none;
+            font-size: 2em;
+            color: rgb(168, 12, 12);
+            font-weight: bold;
+            /* text-decoration: none; */
+            transition: 0.2s;
         }
 
         .linkbox {
@@ -188,7 +195,8 @@
             font-size: 18px;
         }
 
-        footer {
+        .c2019c {
+            
             font-family: 'Fira Code', monospace;
             height: 0px;
             border-bottom: 24px rgba(0, 0, 0, 0.7) solid;
@@ -197,12 +205,32 @@
             bottom: 0px;
             right: -148px;
             color: rgba(255, 255, 255, 0.54);
-        transition: 0.3s;
+            transition: 0.3s;
         }
-        footer:hover{
-        right: 0px;
 
+        footer{
+            width: 40%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            text-align: center;
+            font-family: arial;
+            margin-bottom: 2em;
+            margin-top: 2em;
+            margin: auto;
+            justify-content: center;
+            padding: 0.4em;
+            border: solid black 3px;
+            border-radius:4px ;
+            background-color: rgba(3, 3, 3, 0.329);
+            position: -webkit-sticky;
+            position: sticky;
         }
+        @media only screen and (max-width: 425px) {
+            footer {
+                width: 90%;
+            }
+        }
+
     </style>
 </head>
 
@@ -257,28 +285,31 @@
                 <br>
                 <div class="tooltip">
                     <button onclick="myFunction('3')" onmouseout="outFunc()">
-                        <span class="tooltiptext" id="myTooltip3">Copy to clipboard</span>
-                        Copy
-                    </button>
-                    <br>
+                            <span class="tooltiptext" id="myTooltip3">Copy to clipboard</span>
+                            Copy
+                        </button>
+                        <br>
+                    </div>
+                </div>
+                
+                <div class="red card " title="完全不可用">
+                    <!-- <img src="https://cn.bing.com/th?id=OIP.rRiWctghHdnyaMQPjSQm1AHaDx&pid=Api&rs=1" alt="Denim Jeans" style="width:100%"> -->
+                    <div class="red dot"></div>
+                    <h1>Ohssr</h1>
+                    <a class="linkbox" href=" http://ohssr.pw/">ohssr.pw</a><br>
+                    <p class="tou">已经到期</p>
                 </div>
             </div>
-
-            <div class="red card " title="完全不可用">
-                <!-- <img src="https://cn.bing.com/th?id=OIP.rRiWctghHdnyaMQPjSQm1AHaDx&pid=Api&rs=1" alt="Denim Jeans" style="width:100%"> -->
-                <div class="red dot"></div>
-                <h1>Ohssr</h1>
-                <a class="linkbox" href=" http://ohssr.pw/">ohssr.pw</a><br>
-                <p class="tou">已经到期</p>
-            </div>
-    </div>
-    </details>
-    <center>
+        </details>
         <footer>
-            @ 2019 --> kasusa
+            <code></code>
+                <b>⬇ 常用软件下载 ⬇</b> <br>
+                 <a href="https://github.com/HMBSbige/ShadowsocksR-Windows/releases/tag/5.1.5">🖥️</a> 
+                <a href="https://wohaobang.cn/">📱</a>
         </footer>
-    </center>
-</body>
 
-
-</html>
+    <div class = "c2019c">@ 2019 --> kasusa</div>
+    </body>
+    
+    
+    </html>
