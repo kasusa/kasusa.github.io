@@ -14,6 +14,11 @@
 3. Live Server
 
 ## github拉取代理设置：
+克隆本项目
+```
+git clone https://github.com/kasusa/java-installation.git
+```
+
 上代理（github）
 ```
 git config --global http.proxy http://127.0.0.1:1080
@@ -28,4 +33,9 @@ git config --global --unset https.proxy
 ```
 git config --global http.https://github.com.proxy https://127.0.0.1:1080
 git config --global https.https://github.com.proxy https://127.0.0.1:1080
+```
+把上面的only github 代理下了
+```
+git config --global --unset http.https://github.com.proxy 
+git config --global --unset https.https://github.com.proxy
 ```
