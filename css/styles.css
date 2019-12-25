@@ -126,7 +126,7 @@ a:hover {
 }
 
 #footer p {
-    color: #f3f7f6;
+    color: #f3f7f6a9;
 }
 
 .column {
@@ -137,20 +137,24 @@ a:hover {
     vertical-align: top;
 }
 
+
 .container {
     max-width: 1000px;
     margin: 0 auto;
 }
 
 .post-container:nth-child(even) {
-    background-color: #e7e4e4cc;
+    background-color: rgba(231, 228, 228, 0.8);
 }
 
 .post,
 .about {
     max-width: 800px;
     margin: 0 auto;
-    padding: 60px 0;
+    padding: 3em 1em ;
+
+    
+
 }
 
 .post-author img {
@@ -174,4 +178,10 @@ a:hover {
 
 .about {
     text-align: center;
+}
+.cloudmusic{
+    position: sticky;
+    right: 5px;
+    text-align: left;
+    top: 5px;
 }
