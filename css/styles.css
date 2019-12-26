@@ -59,7 +59,8 @@ p {
 
 #header {
     background-color: #1abc9c;
-    height: 150px;
+    background-image: url("../images/chrimastree.png");
+    height: 200px;
     line-height: 150px;
 }
 
@@ -106,7 +107,8 @@ a:hover {
 
 #go-lab-button {
     opacity: 0.8;
-    filter: invert(90%);
+    filter: invert(10%);
+    -webkit-filter: invert(10%);
 }
 
 #go-lab-button:hover {
@@ -152,11 +154,11 @@ a:hover {
     max-width: 800px;
     margin: 0 auto;
     padding: 3em 1em ;
-
-    
-
 }
 
+.post-container:first-child > .post{
+    padding-top: 1em;
+}
 .post-author img {
     width: 50px;
     height: 50px;
@@ -181,7 +183,8 @@ a:hover {
 }
 .cloudmusic{
     position: sticky;
+    position: -webkit-sticky;
     right: 5px;
     text-align: left;
-    top: 5px;
+    top: 0;
 }
