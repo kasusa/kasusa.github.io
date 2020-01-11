@@ -5,18 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>my netflix account</title>
     <style>
-        body{
+        @import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.207/distr/fira_code.css);
+
+        * {
+            font-family: 'Fira Code', monospace;
+        }
+
+        body {
+            background-color: rgb(8, 19, 18);
             background-image: url("ShadowrocketTheme/img/dot.png");
-            background-size: 7px ;
+            background-size: 14px;
             margin-top: 3em;
         }
+
         .box {
-            width: 300px;
+            margin: 5%;
+            max-width: 400px;
             background-color: rgb(36, 36, 36);
             color: aqua;
-            padding: 1em 4em;
             border-radius: 10px;
             border: 2px solid rgba(255, 255, 255, 0.096);
             margin-bottom: 3em;
@@ -26,14 +35,45 @@
             text-shadow: 0 0 2px rgb(116, 116, 116);
             color: rgb(197, 134, 255);
         }
-        .title b{
+
+        .title b {
             color: rgb(224, 247, 23);
         }
-        .title sl{
+
+        .title sl {
             color: rgb(255, 50, 84);
         }
-        .svip{
-            color: rgba(240, 248, 255, 0.247);
+
+        .svip {
+            color: rgb(65, 82, 97);
+        }
+
+        img {
+            width: 2em;
+            transition: 0.3s;
+        }
+
+        img:active {
+            width: 20em;
+        }
+
+        footer {
+            color: aliceblue;
+        }
+
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #131313;
+            min-width: 100px;
+            box-shadow: 0px 8px 16px 0px rgba(97, 86, 86, 0.2);
+            padding: 2px 46px;
+            z-index: 999;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
         }
     </style>
 </head>
@@ -41,20 +81,32 @@
 
 <center>
 
-    <body style="background-color: rgb(0, 0, 0);">
-        <p class="title"><sl>Netflix</sl> 2019-12-28 <b>+45</b> Days</p>
+    <body>
+        <p class="title">
+            <sl>Netflix</sl> 2019-12-28 <b>+45</b> Days
+        </p>
         <div class="box">
             <p>msdkjfietreyi@hotmail.com</p>
             <p>svip2019.tk</p>
         </div>
 
-        <p class="title"><sl>BaiduNetdisk</sl> 2019-12-29 <b>+60</b> Days</p>
-        <div class="box">
+        <p class="title">
+            <sl>BaiduNetdisk</sl> 2019-12-29 <b>+60</b> Days
+        </p>
+        <div class="box dropdown">
             <p>17526377481</p>
             <p>xh666666</p>
-            <p class="svip">weibo</p>
-            <p class="svip">201912292154134KZ5Dr</p>
+            <div class="dropdown-content">
+                <p >使用微博登录</p>
+                <p class="svip">201912292154134KZ5Dr</p>
+            </div>
+            
         </div>
+
+        <img src="../images/beauty.png" alt="gril" srcset="">
+        <footer>
+            @kasusa
+        </footer>
     </body>
 </center>
 
