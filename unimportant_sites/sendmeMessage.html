@@ -61,14 +61,17 @@
             <br>
             想说的话 :
             <br>
-            <textarea id="saybox" name="" cols="20" rows="10"></textarea>
+            <textarea id="saybox" name="" cols="22" rows="10"></textarea>
             
             <br>
             <input onclick="sendtxt(gettxt())" style="padding-left:10px;padding-right:10px; " type="Submit" value="Submit">
     
             <a href="主人服务器又挂掉啦~" target="_blank" id="link"></a>
         </div>
-
+        <p style="color: rgba(240, 248, 255, 0.548);">
+            请不要在text参数中传递引号、点、花括号等字符。<br>
+            因为微信的接口不支持一系列的特殊字符<br>
+        </p>
     </center>
     
 </body>

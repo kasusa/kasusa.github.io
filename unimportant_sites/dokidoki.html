@@ -24,6 +24,23 @@
       padding: 3px;
       border-radius: 4px;
     }
+    .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #ffbde142;
+            color: #000;
+            -webkit-backdrop-filter: blur(35px);
+            backdrop-filter: blur(35px);
+            border-radius: 10px;
+            min-width: 100px;
+            box-shadow: 10px 8px 16px 0px rgba(97, 86, 86, 0.2);
+            padding: 2px 46px;
+            z-index: 999;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
 
     BODY {
       width: 100%;
@@ -119,8 +136,11 @@
       <dd>
         <a href="http://www.monikaafterstory.com/">monika after story</a>
         <br>
-        <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1368773843">*钢琴曲</a>
-        <pre>
+        <div  class="dropdown">
+          <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1368773843">*钢琴曲</a>
+
+          <div class="dropdown-content">
+            <pre>
 1° verse - OOOOIUUIOUYTYUTW - OPOOPO]]P[OP[O
 2° verse - OPOUIOIUYEWQEWUT - OPOOPO]]P[OP[O
 3° verse - OOOIUTTYUO
@@ -143,7 +163,11 @@
 20° verse - WETETYT
 21° verse - UIIUTETO - OUITPO
 22° verse - WETT
-        </pre>
+                      </pre>
+          </div>
+        </div>
+
+
       </dd>
       <dd>
         <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1176221672">汉化补丁（steam）</a>
