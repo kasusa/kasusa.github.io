@@ -19,3 +19,11 @@ export PATH=/usr/local/bin:$PATH
 * 有效期限：永久有效
 * 用户局限：仅对当前用户
 
+ 后来出现了一个问题,就是我要用系统命令的时候(比如vim),它告诉我不能找到vim,因为它发现 `/usr/bin` 不在环境变量里面
+
+ 解决方法就是在刚刚加入的那行后面再加入一行
+
+```sh
+export PATH=/usr/local/bin:/mnt/c/Users/kasusa/redis-5.0.0
+export PATH=/bin:/usr/bin
+```
