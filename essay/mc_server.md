@@ -10,7 +10,7 @@
 * [optifine(光影插件)](https://optifine.net/home)
 
 ---
-蓝奏云 快捷方便包
+[快捷下载包(蓝奏云)](https://kasusa.lanzous.com/b00znhczi)  密码:mccc
 
 # 搭建服务端
 
@@ -56,7 +56,7 @@ screen -r mcserver
 # 使用客户端
 我推荐使用bakaXL(支持win10),可以在顶部链接中找到
 
-我有做好快捷下载包,会上传到蓝奏云,包括:
+我有做好快捷下载包,在顶部链接中,包括:
 * optifine1.14.4 jar
 * oCd 材质 zip
 * seus-重置 光影 zip
