@@ -12,10 +12,11 @@
     <style>
         .hide {
             display: none;
-            background-color: #dadada;
+            /* background-color: #dadada; */
+            background-color: #c2bebe;
             width: fit-content;
             padding: 22px;
-            border: 1px solid #c3c2c2;
+            border: 1px solid #868686;
         }
         
         .hide:hover {
@@ -30,7 +31,12 @@
             color: transparent;
             float: left;
         }
+        
+        button:active {
+            transform: scale(0.9);
+        }
     </style>
+
     <style>
         body {
             background: rgb(218, 218, 218);
@@ -79,10 +85,11 @@
     <div id="MyClockDisplay" class="clock-2" onload="showTime()"></div>
     <div class="myDIV">themes</div>
     <div class="hide">
-        <button onclick="theme3()">default</button>
-        <button onclick="theme2()">white</button> ||
-        <button onclick="theme1()">black</button>
-        <button onclick="theme4()">mute</button>
+        <button onclick="theme3()">雅灰</button>
+        <button onclick="theme2()">纸白</button> ||
+        <button onclick="theme1()">夜光</button>
+        <button onclick="theme4()">隐匿</button> ||
+        <button onclick="openFullscreen()">全屏</button>
     </div>
 
 
@@ -141,6 +148,22 @@
             d.className = "clock-3";
             document.body.style.backgroundColor = "#000"
         }
+
+        var elem = document.documentElement;
+
+        function openFullscreen() {
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+            } else if (elem.mozRequestFullScreen) { /* Firefox */
+                elem.mozRequestFullScreen();
+            } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+                elem.webkitRequestFullscreen();
+            } else if (elem.msRequestFullscreen) { /* IE/Edge */
+                elem.msRequestFullscreen();
+            }
+        }
+
+
         showTime();
     </script>
 
