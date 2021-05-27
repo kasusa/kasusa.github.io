@@ -20,17 +20,17 @@ a:hover {
 }
 
 .transparent_pink {
-    background-color: rgba(221, 114, 152, 0.7);
+    background-color: #103e00c4;
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
 }
 
 #lab_header {
     /* background-color: rgb(255, 139, 180); */
-    background-color: rgb(95 52 67);
-    height: 200px;
+    background-color: rgb(0 0 0);
+    /* height: 200px; */
     line-height: 150px;
-    padding: 4em;
+    padding: 2.5em;
 }
 
 #lab_header a {
