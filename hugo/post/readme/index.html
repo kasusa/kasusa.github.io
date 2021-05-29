@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>自学 linux 命令 :: KASUSA</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="自学 linux 命令" />
+<meta name="keywords" content=", " />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://kasusa.github.io/hugo/post/readme/" />
+
+
+
+
+<link rel="stylesheet" href="https://kasusa.github.io/hugo/assets/style.css">
+
+  <link rel="stylesheet" href="https://kasusa.github.io/hugo/assets/red.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon" href="https://kasusa.github.io/hugo/img/apple-touch-icon-192x192.png">
+
+  <link rel="shortcut icon" href="https://kasusa.github.io/hugo/img/favicon/red.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="自学 linux 命令">
+<meta property="og:description" content="自学 linux 命令" />
+<meta property="og:url" content="https://kasusa.github.io/hugo/post/readme/" />
+<meta property="og:site_name" content="KASUSA" />
+
+  <meta property="og:image" content="https://kasusa.github.io/hugo/">
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+  <meta property="article:published_time" content="2021-05-29 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="red">
+
+
+<div class="container headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/hugo/">
+    <div class="logo">
+        KASUSA
+    </div>
+</a>
+    </div>
+    
+      <div class="menu-trigger">menu</div>
+    
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/hugo/links">中转站</a></li>
+        
+      
+        
+          <li><a href="/hugo/contact">交个朋友</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/hugo/links">中转站</a></li>
+      
+    
+      
+        <li><a href="/hugo/contact">交个朋友</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="https://kasusa.github.io/hugo/post/readme/">自学 linux 命令</a></h1>
+  <div class="post-meta">
+    
+      <span class="post-date">
+        2021-05-29 
+      </span>
+    
+    
+    <span class="post-author">:: kasusa</span>
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="https://kasusa.github.io/hugo/tags/ubuntu/">ubuntu</a>&nbsp;
+    
+    #<a href="https://kasusa.github.io/hugo/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/">命令行</a>&nbsp;
+    
+  </span>
+  
+
+  
+
+  
+
+  <div class="post-content"><div>
+        <ul>
+<li>
+<ul>
+<li><a href="https://www.sumatrapdfreader.org/free-pdf-reader.html">sumatra PDF(pdf阅读器)</a></li>
+</ul>
+</li>
+<li><a href="https://www.linuxprobe.com/training">官方培训课程</a></li>
+<li><a href="https://pan.baidu.com/s/1plj-7aoB7E0GF1PfjKb5qw">电子书</a>
+提取码：65x8</li>
+</ul>
+<hr>
+<p>实验楼</p>
+<ul>
+<li><a href="#%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE">控制台常用快捷键</a></li>
+<li><a href="#%E4%B8%80%E6%AC%A1%E6%80%A7%E5%88%9B%E5%BB%BA%E5%A4%9A%E4%B8%AA%E6%96%87%E4%BB%B6">一次性创建多个文件</a></li>
+<li><a href="#%E5%B8%B8%E7%94%A8%E9%80%9A%E9%85%8D%E7%AC%A6">常用通配符</a></li>
+<li><a href="#%E5%88%9B%E5%BB%BA%E5%92%8C%E5%88%87%E6%8D%A2%E7%94%A8%E6%88%B7">创建和切换用户</a></li>
+<li><a href="#%E6%96%87%E4%BB%B6%E5%92%8C%E6%9D%83%E9%99%90">文件和权限</a></li>
+<li><a href="#%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6%E5%92%8C%E7%9B%AE%E5%BD%95">创建文件和目录</a></li>
+<li><a href="#%E5%A4%8D%E5%88%B6%E6%96%87%E4%BB%B6/%E7%9B%AE%E5%BD%95">复制文件/目录</a></li>
+<li><a href="#%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6">删除文件</a></li>
+<li><a href="#%E7%A7%BB%E5%8A%A8%E5%92%8C%E9%87%8D%E5%91%BD%E5%90%8D">移动和重命名</a></li>
+<li><a href="#linux%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84">linux文件目录结构</a></li>
+</ul>
+<h2 id="控制台常用快捷键">控制台常用快捷键<a href="#控制台常用快捷键" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<table>
+<thead>
+<tr>
+<th>按键</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ctrl+d</td>
+<td>键盘输入结束或退出终端</td>
+</tr>
+<tr>
+<td>Ctrl+s</td>
+<td>暂停当前程序，暂停后按下任意键恢复运行</td>
+</tr>
+<tr>
+<td>Ctrl+z</td>
+<td>将当前程序放到后台运行，恢复到前台为命令fg</td>
+</tr>
+<tr>
+<td>Ctrl+a</td>
+<td>将光标移至输入行头，相当于Home键</td>
+</tr>
+<tr>
+<td>Ctrl+e</td>
+<td>将光标移至输入行末，相当于End键</td>
+</tr>
+<tr>
+<td>Ctrl+k</td>
+<td>删除从光标所在位置到行末</td>
+</tr>
+<tr>
+<td>Alt+Backspace</td>
+<td>向前删除一个单词</td>
+</tr>
+<tr>
+<td>Shift+PgUp</td>
+<td>将终端显示向上滚动</td>
+</tr>
+<tr>
+<td>Shift+PgDn</td>
+<td>将终端显示向下滚动</td>
+</tr>
+</tbody>
+</table>
+<h2 id="一次性创建多个文件">一次性创建多个文件<a href="#一次性创建多个文件" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<pre><code>$ touch love_{1..10}_shiyanlou.txt
+</code></pre><h2 id="常用通配符">常用通配符<a href="#常用通配符" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<table>
+<thead>
+<tr>
+<th>字符</th>
+<th>含义</th>
+</tr>
+</thead>
+</table>
+<ul>
+<li>|	匹配 0 或多个字符
+? |	匹配任意一个字符
+[list] |	匹配 list 中的任意单一字符
+[^list] |	匹配 除 list 中的任意单一字符以外的字符
+[c1-c2] |	匹配 c1-c2 中的任意单一字符 如：[0-9][a-z]
+{string1,string2,&hellip;} |	匹配 string1 或 string2 (或更多)其一字符串
+{c1..c2} |	匹配 c1-c2 中全部字符 如{1..10}</li>
+</ul>
+<h2 id="创建和切换用户">创建和切换用户<a href="#创建和切换用户" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>创建用户(默认会让输入密码)</p>
+<pre><code>sudo adduser &lt;USERNAME&gt;
+</code></pre><p>修改密码</p>
+<pre><code>sudo passwd &lt;USERNAME&gt;
+</code></pre><p>切换用户</p>
+<pre><code>su &lt;USERNAME&gt;
+</code></pre><p>查看当前用户是谁</p>
+<pre><code>whoami
+</code></pre><p>查看用户组</p>
+<pre><code>cat /etc/group | grep -E &quot;&lt;USERNAME&gt;&quot;
+</code></pre><p>给新建的用户sudo权限(第二条是centos里面的情况。)</p>
+<pre><code>usermod -G sudo &lt;USERNAME&gt;
+usermod -aG wheel &lt;USERNAME&gt; 
+</code></pre><p>删除用户(把它创建时自动创建的用户目录一并删除)</p>
+<pre><code>sudo deluser lilei --remove-home
+</code></pre><p><strong>adduser 和 useradd 的区别是什么</strong></p>
+<blockquote>
+<p>答：useradd 只创建用户，不会创建用户密码和工作目录，创建完了需要使用 passwd <!-- raw HTML omitted --> 去设置新用户的密码。adduser 在创建用户的同时，会创建工作目录和密码（提示你设置），做这一系列的操作。其实 useradd、userdel 这类操作更像是一种命令，执行完了就返回。而 adduser 更像是一种程序，需要你输入、确定等一系列操作</p>
+</blockquote>
+<h2 id="文件和权限">文件和权限<a href="#文件和权限" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p><img src="https://doc.shiyanlou.com/linux_base/3-10.png/wm" alt="图像权限">
+这个图是在使用<code>ls -l</code>时候前部的意义。</p>
+<p>chmod 修改权限。每一个数字代表对应权限</p>
+<pre><code>rwx|r-x|r-x
+111|101|101 = 755
+</code></pre><p>chown 修改所有者</p>
+<pre><code>chown &lt;usrname&gt; &lt;filename&gt;
+</code></pre><h2 id="创建文件和目录">创建文件和目录<a href="#创建文件和目录" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>touch 可以创建文件/更新文件时间戳。
+mkdir 可以创建目录
+mkdir -p 可以创建多级目录</p>
+<pre><code> mkdir -p father/son/grandson
+</code></pre><h2 id="复制文件目录">复制文件/目录<a href="#复制文件目录" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>复制文件</p>
+<pre><code>cp &lt;文件&gt; &lt;目的地&gt;
+</code></pre><p>复制目录</p>
+<pre><code class="language-writer" data-lang="writer">cp &lt;要复制的目录&gt; &lt;目的地&gt;
+</code></pre><h2 id="删除文件">删除文件<a href="#删除文件" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<pre><code>rm &lt;文件&gt;
+rm -r &lt;目录&gt;
+rm -f &lt;文件&gt; (包括有写保护的文件)
+rm -rf &lt;任何东西&gt;
+
+</code></pre><h2 id="移动和重命名">移动和重命名<a href="#移动和重命名" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<pre><code>mv &lt;原文件&gt; &lt;新位置&gt;
+mv &lt;原文件名&gt; &lt;新文件名字&gt;
+</code></pre><p>批量重命名</p>
+<pre><code>rename &lt;'正则'&gt; &lt;通配符&gt;
+</code></pre><h2 id="linux文件目录结构">linux文件目录结构<a href="#linux文件目录结构" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p><img src="https://doc.shiyanlou.com/linux_base/4-1.png/wm" alt="目录结构"></p>
+<h2 id="变量">变量<a href="#变量" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>声明变量</p>
+<pre><code>declare tmp
+</code></pre><p>直接用=赋值同时也可以新建变量,注意不要在等号左右使用空格</p>
+<pre><code>tmp=helloyou
+</code></pre><p>拿出变量tmp</p>
+<pre><code>echo $tmp
+</code></pre><p>删除变量tmp</p>
+<pre><code>unset tmp
+</code></pre><h2 id="环境变量">环境变量<a href="#环境变量" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>暂时设置一个环境变量</p>
+<pre><code>tmp=helloyuoman
+export tmp
+</code></pre><p>永久设置一个环境变量</p>
+<pre><code>/etc/bashrc         shell变量（有的 Linux 没有这个文件） 
+/etc/profile        环境变量
+/home/usr/.profile  用户变量
+</code></pre><p>shiyanlou的环境用的是zsh命令行，在根目录有一个<code>.zshrc</code>文件是初始化配置文件。
+可以使用这句来把 /home/shiyanlou/mybin 添加到path中</p>
+<blockquote>
+<p>注意,这里是用的 &raquo; 它意味&quot;追加&quot; , &gt; 是覆盖的意思</p>
+</blockquote>
+<pre><code>$ echo &quot;PATH=$PATH:/home/shiyanlou/mybin&quot; &gt;&gt; .zshrc
+</code></pre><p>直接刷新环境变量(无需开新的zsh)<strong>两种等效</strong></p>
+<pre><code>source .zshrc
+. .zshrc
+</code></pre><h2 id="修改已有变量">修改已有变量<a href="#修改已有变量" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<table>
+<thead>
+<tr>
+<th>变量设置方式</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>${变量名#匹配字串}</td>
+<td>从头向后开始匹配，删除符合匹配字串的最短数据</td>
+</tr>
+<tr>
+<td>${变量名##匹配字串}</td>
+<td>从头向后开始匹配，删除符合匹配字串的最长数据</td>
+</tr>
+<tr>
+<td>${变量名%匹配字串}</td>
+<td>从尾向前开始匹配，删除符合匹配字串的最短数据</td>
+</tr>
+<tr>
+<td>${变量名%%匹配字串}</td>
+<td>从尾向前开始匹配，删除符合匹配字串的最长数据</td>
+</tr>
+<tr>
+<td>${变量名/旧的字串/新的字串}</td>
+<td>将符合旧字串的第一个字串替换为新的字串</td>
+</tr>
+<tr>
+<td>${变量名//旧的字串/新的字串}</td>
+<td>将符合旧字串的全部字串替换为新的字串</td>
+</tr>
+</tbody>
+</table>
+<h2 id="搜索文件">搜索文件<a href="#搜索文件" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>whereis 简单快速</p>
+<blockquote>
+<p>whereis 只能搜索二进制文件(-b)，man 帮助文件(-m)和源代码文件(-s)。如果想要获得更全面的搜索结果可以使用 locate 命令。</p>
+</blockquote>
+<p>locate快而全 使用要先安装,并且更新索引数据库</p>
+<pre><code>sudo apt-get update
+sudo apt-get install locate
+sudo updatedb
+</code></pre><p>find 超强大</p>
+<blockquote>
+<p>寻找/etc中(包括子目录)名为的 sources.list文件</p>
+</blockquote>
+<pre><code>find /etc -name sources.list
+</code></pre><hr>
+<h2 id="配置主机名称">配置主机名称<a href="#配置主机名称" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p><code>4.1.2 配置主机名称</code></p>
+<ol>
+<li>使用 Vim 编辑器修改“/etc/hostname”主机名称文件。</li>
+<li>把原始主机名称删除后追加你想要起的名字。注意，使用 Vim 编辑器修改主机名称文件后，要在末行模式下执行:wq!命令才能保存并退出文档。</li>
+<li>保存并退出文档，然后使用 hostname 命令检查是否修改成功。</li>
+</ol>
+<blockquote>
+<p>不好用的时候试着重新启动</p>
+</blockquote>
+<h2 id="man-命令中常用按键以及用途">man 命令中常用按键以及用途<a href="#man-命令中常用按键以及用途" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<table>
+<thead>
+<tr>
+<th>按键</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>空格键</td>
+<td>向下翻一页</td>
+</tr>
+<tr>
+<td>/</td>
+<td>从上至下搜索某个关键词，如“/linux”</td>
+</tr>
+<tr>
+<td>?</td>
+<td>从下至上搜索某个关键词，如“?linux”</td>
+</tr>
+<tr>
+<td>n</td>
+<td>定位到下一个搜索到的关键词</td>
+</tr>
+<tr>
+<td>N</td>
+<td>定位到上一个搜索到的关键词</td>
+</tr>
+</tbody>
+</table>
+<h1 id="系统状态">系统状态<a href="#系统状态" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<h2 id="ps-aux命令">ps aux命令<a href="#ps-aux命令" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<table>
+<thead>
+<tr>
+<th>状态值</th>
+<th>意义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R（运行）</td>
+<td>进程正在运行或在运行队列中等待。</td>
+</tr>
+<tr>
+<td>S（中断）</td>
+<td>进程处于休眠中，当某个条件形成后或者接收到信号时，则脱离该状态。</td>
+</tr>
+<tr>
+<td>D（不可中断）</td>
+<td>进程不响应系统异步信号，即便用 kill 命令也不能将其中断。</td>
+</tr>
+<tr>
+<td>Z（僵死）</td>
+<td>进程已经终止，但进程描述符依然存在, 直到父进程调用 wait4()系统函数后将进程释放。</td>
+</tr>
+<tr>
+<td>T（停止）</td>
+<td>进程收到停止信号后停止运行。</td>
+</tr>
+</tbody>
+</table>
+<p>如果我们在系统终端中执行一个命令后想立即停止它，可以同时按下 <code> Ctrl + C</code> 组合
+键（生产环境中比较常用的一个快捷键），这样将立即终止该命令的进程。或者，如果
+有些命令在执行时不断地在屏幕上输出信息，影响到后续命令的输入，则可以在执
+行命令时在末尾添加上一个 <code>&amp;</code> 符号，这样命令将进入系统后台来执行。</p>
+<h2 id="ifconfig-命令">ifconfig 命令<a href="#ifconfig-命令" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>ifconfig 命令用于获取网卡配置与网络状态等信息，格式为“ifconfig [网络设备] [参数]”。使用 ifconfig 命令来查看本机当前的网卡配置与网络状态等信息时，其实主要查看的就是网卡名称、inet 参数后面的 IP 地址、ether 参数后面的网卡物理地址（又称为 MAC 地址）</p>
+<h2 id="uptime-命令">uptime 命令<a href="#uptime-命令" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>uptime 用于查看系统的负载信息，格式为 uptime。</p>
+<p>uptime 命令真的很棒，它可以显示当前系统时间、系统已运行时间、启用终端数量以及平均负载值等信息。平均负载值指的是系统在最近 1 分钟、5 分钟、15 分钟内的压力情况（下面加粗的信息部分）；负载值越低越好，尽量不要长期超过 1，在生产环境中不要
+超过 5。</p>
+<h2 id="uname--a">uname -a<a href="#uname--a" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>查看计算机的系统类型</p>
+<h2 id="free--h">free -h<a href="#free--h" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>查看内存</p>
+<h2 id="last-命令">last 命令<a href="#last-命令" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>last 命令用于查看所有系统的登录记录，格式为“last [参数]”。</p>
+<h2 id="history">history<a href="#history" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>查看历史命令记录。
+<code>history -c</code> 清空记录</p>
+<h1 id="切换目录">切换目录<a href="#切换目录" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<h2 id="pwd-命令">pwd 命令<a href="#pwd-命令" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>pwd 命令用于显示用户当前所处的工作目录，格式为“pwd [选项]”。</p>
+<h2 id="cd-命令">cd 命令<a href="#cd-命令" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<table>
+<thead>
+<tr>
+<th>cd</th>
+<th>命令用于切换工作路径，格式为“cd [目录名称]”。</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cd -</code></td>
+<td>命令返回到上一次所处的目录</td>
+</tr>
+<tr>
+<td><code>cd ..</code></td>
+<td>命令进入上级目录</td>
+</tr>
+<tr>
+<td><code>cd ~</code></td>
+<td>命令切换到当前用户的家目录，亦或使用</td>
+</tr>
+<tr>
+<td><code>cd ~username</code></td>
+<td>切换到其他用户的家目录。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ls">ls<a href="#ls" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>~</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ls -a</td>
+<td>查看隐藏文件</td>
+</tr>
+<tr>
+<td>ls -l</td>
+<td>查看文件详细信息</td>
+</tr>
+<tr>
+<td>ls -la</td>
+<td>查看隐藏文件以及显示详细</td>
+</tr>
+</tbody>
+</table>
+<h1 id="查看文件">查看文件<a href="#查看文件" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<h2 id="cat-命令">cat 命令<a href="#cat-命令" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>用来查看比较小的文本文件</p>
+<p><code>cat -n</code>  查看文本内容时还想顺便显示行号
+<code>tac</code> 可以倒序输出文件.</p>
+<h2 id="more-命令">more 命令<a href="#more-命令" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<pre><code>more &lt;文件名&gt;
+</code></pre><p>more更加适合阅读长文件</p>
+<p>可以使用</p>
+<ul>
+<li><!-- raw HTML omitted -->enter<!-- raw HTML omitted --> 向下一行</li>
+<li><!-- raw HTML omitted -->space<!-- raw HTML omitted --> 向下一屏</li>
+</ul>
+<h2 id="head-和-tail">head 和 tail<a href="#head-和-tail" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>默认查看文件头部/尾部的10行。参数 -n 可以控制行数。</p>
+<p>tail可以使用 -f 查看最新一行.</p>
+<pre><code>head -n 1 &lt;文件名&gt;
+tail -f &lt;文件名&gt;
+</code></pre><h2 id="wc-命令">wc 命令<a href="#wc-命令" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>wc 命令用于统计指定文本的行数、字数、字节数，格式为“wc [参数] 文本”。</p>
+<p><code> file</code> 命令来查看文件类型</p>
+<h2 id="压缩">压缩<a href="#压缩" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p><code>tar -czvf 压缩包名称.tar.gz 要打包的目录</code></p>
+<h2 id="搜索">搜索<a href="#搜索" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p><code>grep</code> 命令用于在文本中执行关键词搜索，并显示匹配的结果</p>
+<table>
+<thead>
+<tr>
+<th>~</th>
+<th>~</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-b</td>
+<td>将可执行文件（binary）当作文本文件（text）来搜索</td>
+</tr>
+<tr>
+<td>-c</td>
+<td>仅显示找到的行数</td>
+</tr>
+<tr>
+<td>-i</td>
+<td>忽略大小写</td>
+</tr>
+<tr>
+<td>-n</td>
+<td>显示行号</td>
+</tr>
+<tr>
+<td>-v</td>
+<td>反向选择 — 仅列出没有“关键词”的行</td>
+</tr>
+</tbody>
+</table>
+<pre><code>root@iZ2ze1hf17j9hv44rdpmaaZ:~# grep -n Jan you
+2:-rw-r--r-- 1 root root   17 Jan 12  2000 kasusa
+3:drwxr-xr-x 2 root root 4096 Jan 30 10:15 mydir
+4:drwxr-xr-x 2 root root 4096 Jan 30 10:16 mydir2
+5:drwxr-xr-x 2 root root 4096 Jan 30 11:47 ooo
+6:-rw-r--r-- 1 root root    0 Jan 30 11:51 you 
+
+# you是一个文件。用显示行号的模式在you里面寻找 Jan 关键字 。在控制台里面会有高亮显示
+
+</code></pre><h2 id="别名">别名<a href="#别名" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>可以用 <code>alias</code> 命令来创建一个属于自己的命令别名，格式为“<code>alias 别名=命令</code>”。</p>
+<p>若要取消一个命令别名，则是用 unalias 命令，格式为“unalias 别名”。</p>
+<h2 id="变量和全局">变量和全局<a href="#变量和全局" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>一般来说，变量都是用大写的。</p>
+<table>
+<thead>
+<tr>
+<th>有一些</th>
+<th>常用的全局变量：</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HOME</td>
+<td>用户的主目录（即家目录）</td>
+</tr>
+<tr>
+<td>SHELL</td>
+<td>用户在使用的 Shell 解释器名称</td>
+</tr>
+<tr>
+<td>HISTSIZE</td>
+<td>输出的历史命令记录条数</td>
+</tr>
+<tr>
+<td>HISTFILESIZE</td>
+<td>保存的历史命令记录条数</td>
+</tr>
+<tr>
+<td>MAIL</td>
+<td>邮件保存路径</td>
+</tr>
+<tr>
+<td>LANG</td>
+<td>系统语言、语系名称</td>
+</tr>
+<tr>
+<td>RANDOM</td>
+<td>生成一个随机数字</td>
+</tr>
+<tr>
+<td>PS1 Bash</td>
+<td>解释器的提示符</td>
+</tr>
+<tr>
+<td>PATH</td>
+<td>定义解释器搜索用户执行命令的路径</td>
+</tr>
+<tr>
+<td>EDITOR</td>
+<td>用户默认的文本编辑器</td>
+</tr>
+</tbody>
+</table>
+<p>自己创建一个变量/读取它：</p>
+<pre><code>root@iZ2ze1hf17j9hv44rdpmaaZ:~# MYVAR=&quot;hello&quot;
+root@iZ2ze1hf17j9hv44rdpmaaZ:~# echo &quot;$MYVAR&quot;
+hello
+</code></pre><p>提升位全局变量：</p>
+<pre><code>root@iZ2ze1hf17j9hv44rdpmaaZ:~# export MYVAR
+</code></pre><h1 id="vim">VIM<a href="#vim" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<h2 id="vim-中常用的命令">Vim 中常用的命令<a href="#vim-中常用的命令" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dd</td>
+<td>删除（剪切）光标所在整行</td>
+</tr>
+<tr>
+<td>5dd</td>
+<td>删除（剪切）从光标处开始的 5 行</td>
+</tr>
+<tr>
+<td>yy</td>
+<td>复制光标所在整行</td>
+</tr>
+<tr>
+<td>5yy</td>
+<td>复制从光标处开始的 5 行</td>
+</tr>
+<tr>
+<td>n</td>
+<td>显示搜索命令定位到的下一个字符串</td>
+</tr>
+<tr>
+<td>N</td>
+<td>显示搜索命令定位到的上一个字符串</td>
+</tr>
+<tr>
+<td>u</td>
+<td>撤销上一步的操作</td>
+</tr>
+<tr>
+<td>p</td>
+<td>将之前删除（dd）或复制（yy）过的数据粘贴到光标后面</td>
+</tr>
+</tbody>
+</table>
+<h2 id="末行模式中可用的命令">末行模式中可用的命令<a href="#末行模式中可用的命令" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p><strong>要想切换到末行模式，在命令模式中输入一个冒号就可以了。</strong>
+末行模式主要用于保存或退出文件，以及设置 Vim 编辑器的工作环境，还可以让用户执
+行外部的 Linux 命令或跳转到所编写文档的特定行数。</p>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>:w</td>
+<td>保存</td>
+</tr>
+<tr>
+<td>:q</td>
+<td>退出</td>
+</tr>
+<tr>
+<td>:q!</td>
+<td>强制退出（放弃对文档的修改内容）</td>
+</tr>
+<tr>
+<td>:wq!</td>
+<td>强制保存退出</td>
+</tr>
+<tr>
+<td>:set</td>
+<td>nu 显示行号</td>
+</tr>
+<tr>
+<td>:set</td>
+<td>nonu 不显示行号</td>
+</tr>
+<tr>
+<td>:命令</td>
+<td>执行该命令</td>
+</tr>
+<tr>
+<td>:整数</td>
+<td>跳转到该行</td>
+</tr>
+<tr>
+<td>:s/one/two</td>
+<td>将当前光标所在行的第一个 one 替换成 two</td>
+</tr>
+<tr>
+<td>:s/one/two/g</td>
+<td>将当前光标所在行的所有 one 替换成 two</td>
+</tr>
+<tr>
+<td>:%s/one/two/g</td>
+<td>将全文中的所有 one 替换成 two</td>
+</tr>
+<tr>
+<td>?字符串</td>
+<td>在文本中从下至上搜索该字符串</td>
+</tr>
+<tr>
+<td>/字符串</td>
+<td>在文本中从上至下搜索该字符串</td>
+</tr>
+</tbody>
+</table>
+
+      </div></div>
+
+  
+  
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h">Read other posts</span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        <span class="button previous">
+            <a href="https://kasusa.github.io/hugo/post/%E7%9B%92%E7%9B%96%E4%B8%8D%E5%85%B3%E6%9C%BA/">
+                <span class="button__icon">←</span>
+                <span class="button__text">盒盖不关机</span>
+            </a>
+        </span>
+        
+        
+        <span class="button next">
+            <a href="https://kasusa.github.io/hugo/post/funstuff/">
+                <span class="button__text">linux fun stuff</span>
+                <span class="button__icon">→</span>
+            </a>
+        </span>
+        
+    </div>
+</div>
+
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2021 Powered by <a href="http://gohugo.io">Hugo</a></span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="https://kasusa.github.io/hugo/assets/main.js"></script>
+<script src="https://kasusa.github.io/hugo/assets/prism.js"></script>
+
+
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

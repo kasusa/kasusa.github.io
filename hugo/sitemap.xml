@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kasusa.github.io/hugo/post/corntab-%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1/</loc>
+    <lastmod>2021-05-29T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://kasusa.github.io/hugo/tags/hugo/</loc>
     <lastmod>2021-05-29T00:00:00+00:00</lastmod>
   </url><url>
@@ -14,11 +17,47 @@
     <loc>https://kasusa.github.io/hugo/post/</loc>
     <lastmod>2021-05-29T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://kasusa.github.io/hugo/tags/qv2ray/</loc>
+    <lastmod>2021-05-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kasusa.github.io/hugo/post/shell/</loc>
+    <lastmod>2021-05-29T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://kasusa.github.io/hugo/tags/</loc>
+    <lastmod>2021-05-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kasusa.github.io/hugo/tags/ubuntu/</loc>
+    <lastmod>2021-05-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kasusa.github.io/hugo/post/ubuntu-install-java/</loc>
+    <lastmod>2021-05-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kasusa.github.io/hugo/post/linux-v2ray-setup/</loc>
+    <lastmod>2021-05-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kasusa.github.io/hugo/post/%E6%8D%A2%E6%BA%90/</loc>
+    <lastmod>2021-05-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kasusa.github.io/hugo/post/vim/</loc>
     <lastmod>2021-05-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://kasusa.github.io/hugo/tags/%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2021-05-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kasusa.github.io/hugo/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/</loc>
+    <lastmod>2021-05-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kasusa.github.io/hugo/post/my-zsh/</loc>
+    <lastmod>2021-05-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kasusa.github.io/hugo/post/%E7%9B%92%E7%9B%96%E4%B8%8D%E5%85%B3%E6%9C%BA/</loc>
+    <lastmod>2021-05-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kasusa.github.io/hugo/post/readme/</loc>
+    <lastmod>2021-05-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kasusa.github.io/hugo/post/funstuff/</loc>
+    <lastmod>2021-05-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://kasusa.github.io/hugo/contact/</loc>
     <lastmod>1970-01-01T00:00:00+00:00</lastmod>

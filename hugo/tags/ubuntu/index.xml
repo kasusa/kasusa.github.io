@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on KASUSA</title>
-    <link>https://kasusa.github.io/hugo/post/</link>
-    <description>Recent content in Posts on KASUSA</description>
+    <title>ubuntu on KASUSA</title>
+    <link>https://kasusa.github.io/hugo/tags/ubuntu/</link>
+    <description>Recent content in ubuntu on KASUSA</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 29 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kasusa.github.io/hugo/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 29 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kasusa.github.io/hugo/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>corntab计划任务</title>
       <link>https://kasusa.github.io/hugo/post/corntab-%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1/</link>
@@ -25,109 +25,6 @@ select-editor 设置任务，每天2：00执行
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;设置任务，每天2：00执行&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;0 2 * * * /home/saber/DDREPORT/ddrp.sh
 &lt;/code&gt;&lt;/pre&gt;</content>
-    </item>
-    
-    <item>
-      <title>hugo博客</title>
-      <link>https://kasusa.github.io/hugo/post/hugo-newblog/</link>
-      <pubDate>Sat, 29 May 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://kasusa.github.io/hugo/post/hugo-newblog/</guid>
-      <description>剧情介绍  今天yr在我旁边弄新的hugo主题，我感觉他的新主题真的很清新，很不错，然后markdown记录之类的确实要比转化成html再放出来更加简单。不过可定制性没有那么好也是实话。
-这个博客对于语法高亮支持很不错。交互和动画就只能限制于模板（这个语法蛮怪的，可能以后会研究一个自己的模板）所以暂时决定把这个弄成技术类博客。
-我终于能把我的linux小知识都搬过来了！
- //简单说一下hugo的安装和使用：
-pwershell安装hugo choco install hugo
-创建hugo工作目录 hugo new site mysite
-进入themes文件夹并且git pull自己用的主题 git clone https://github.com/panr/hugo-theme-terminal.git themes/terminal
- 主题市场 terminal主题(我现在用的)  配置主题 配置主题需要根据不同的主题情况,各有不同，对于我这个主题来说我要把博客官方的 config.toml 粘贴到hugo项目中，并且进行了一点修改。遇到了一点坑，我在后面注释，你可以看一下。
-toml文件：
-baseurl = &amp;#34;&amp;#34; #这个要设为空，否则生成的东西css会找不到。 languageCode = &amp;#34;en-us&amp;#34; theme = &amp;#34;terminal&amp;#34; # theme 原本github上提供的版本是 &amp;#34;hugo-theme-terminal&amp;#34;， # 但是会造成编译错误，故修改 paginate = 5 [params] contentTypeName = &amp;#34;post&amp;#34; themeColor = &amp;#34;red&amp;#34; #选择主题 showMenuItems = 2 #选择显示在顶部的导航链接数目，超出的会折叠。 #链接具体目录可以在下面修改 fullWidthTheme = false centerTheme = false [languages] [languages.</description>
-      <content>&lt;p&gt;&lt;img src=&#34;https://tvax1.sinaimg.cn/large/0083vuQJgy1gqzlm00z45j30hs06z0sq.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;h3 id=&#34;剧情介绍&#34;&gt;剧情介绍&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;今天yr在我旁边弄新的hugo主题，我感觉他的新主题真的很清新，很不错，然后markdown记录之类的确实要比转化成html再放出来更加简单。不过可定制性没有那么好也是实话。&lt;/p&gt;
-&lt;p&gt;这个博客对于语法高亮支持很不错。交互和动画就只能限制于模板（这个语法蛮怪的，可能以后会研究一个自己的模板）所以暂时决定把这个弄成技术类博客。&lt;/p&gt;
-&lt;p&gt;我终于能把我的linux小知识都搬过来了！&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;//简单说一下hugo的安装和使用：&lt;/p&gt;
-&lt;h3 id=&#34;pwershell安装hugo&#34;&gt;pwershell安装hugo&lt;/h3&gt;
-&lt;p&gt;choco install hugo&lt;/p&gt;
-&lt;h3 id=&#34;创建hugo工作目录&#34;&gt;创建hugo工作目录&lt;/h3&gt;
-&lt;p&gt;hugo new site mysite&lt;/p&gt;
-&lt;h3 id=&#34;进入themes文件夹并且git-pull自己用的主题&#34;&gt;进入themes文件夹并且git pull自己用的主题&lt;/h3&gt;
-&lt;p&gt;git clone &lt;a href=&#34;https://github.com/panr/hugo-theme-terminal.git&#34;&gt;https://github.com/panr/hugo-theme-terminal.git&lt;/a&gt; themes/terminal&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;主题市场&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/panr/hugo-theme-terminal/&#34;&gt;terminal主题(我现在用的)&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;配置主题&#34;&gt;配置主题&lt;/h3&gt;
-&lt;p&gt;配置主题需要根据不同的主题情况,各有不同，对于我这个主题来说我要把博客官方的 &lt;code&gt;config.toml&lt;/code&gt; 粘贴到hugo项目中，并且进行了一点修改。遇到了一点坑，我在后面注释，你可以看一下。&lt;/p&gt;
-&lt;p&gt;toml文件：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;baseurl&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;#这个要设为空，否则生成的东西css会找不到。&lt;/span&gt;
-&lt;span style=&#34;color:#a6e22e&#34;&gt;languageCode&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;en-us&amp;#34;&lt;/span&gt;
-&lt;span style=&#34;color:#a6e22e&#34;&gt;theme&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;terminal&amp;#34;&lt;/span&gt; 
-&lt;span style=&#34;color:#75715e&#34;&gt;# theme 原本github上提供的版本是 &amp;#34;hugo-theme-terminal&amp;#34;，&lt;/span&gt;
-&lt;span style=&#34;color:#75715e&#34;&gt;# 但是会造成编译错误，故修改&lt;/span&gt;
-&lt;span style=&#34;color:#a6e22e&#34;&gt;paginate&lt;/span&gt; = &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;
-
-[&lt;span style=&#34;color:#a6e22e&#34;&gt;params&lt;/span&gt;]
-  &lt;span style=&#34;color:#a6e22e&#34;&gt;contentTypeName&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;post&amp;#34;&lt;/span&gt;
-  &lt;span style=&#34;color:#a6e22e&#34;&gt;themeColor&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;red&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;#选择主题&lt;/span&gt;
-  &lt;span style=&#34;color:#a6e22e&#34;&gt;showMenuItems&lt;/span&gt; = &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; 
-  &lt;span style=&#34;color:#75715e&#34;&gt;#选择显示在顶部的导航链接数目，超出的会折叠。&lt;/span&gt;
-  &lt;span style=&#34;color:#75715e&#34;&gt;#链接具体目录可以在下面修改&lt;/span&gt;
-  &lt;span style=&#34;color:#a6e22e&#34;&gt;fullWidthTheme&lt;/span&gt; = &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;
-  &lt;span style=&#34;color:#a6e22e&#34;&gt;centerTheme&lt;/span&gt; = &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;
-
-[&lt;span style=&#34;color:#a6e22e&#34;&gt;languages&lt;/span&gt;]
-  [&lt;span style=&#34;color:#a6e22e&#34;&gt;languages&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;en&lt;/span&gt;]
-    &lt;span style=&#34;color:#a6e22e&#34;&gt;title&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;KASUSA&amp;#34;&lt;/span&gt;
-    &lt;span style=&#34;color:#a6e22e&#34;&gt;subtitle&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;kasusa的技术博客&amp;#34;&lt;/span&gt;
-    &lt;span style=&#34;color:#a6e22e&#34;&gt;keywords&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;
-    &lt;span style=&#34;color:#a6e22e&#34;&gt;copyright&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;
-    &lt;span style=&#34;color:#a6e22e&#34;&gt;menuMore&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;展开&amp;#34;&lt;/span&gt;
-    &lt;span style=&#34;color:#a6e22e&#34;&gt;readMore&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;品读&amp;#34;&lt;/span&gt;
-    &lt;span style=&#34;color:#a6e22e&#34;&gt;readOtherPosts&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;看看别的文章
-&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;
-&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    [languages.en.params.logo]
-&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;      logoText = &amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;KASUSA&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;
-&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;      logoHomeLink = &amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;
-&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;
-&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    [languages.en.menu] #顶部栏条目们（不知道顺序是按照什么计算的）
-&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;      [[languages.en.menu.main]] #一个顶部栏条目
-&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;        identifier = &amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;about&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34; #id
-&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;        name = &amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;About_theme&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34; #顶部条目显示为什么文字
-&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;        url = &amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;about&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34; #点击后进入什么目录
-&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;      [[languages.en.menu.main]]
-&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;        identifier = &amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;showcase&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;
-&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;        name = &amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Showcase&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;
-&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;        url = &amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;showcase&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&amp;#34;&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;写博客&#34;&gt;写博客&lt;/h3&gt;
-&lt;p&gt;在 content - posts 内新建md文件，系统会用mdmd文件内容生成博客。&lt;/p&gt;
-&lt;p&gt;对于md文件顶部的格式有着特殊的要求，这个也是因主体而异的，具体的话就要参考你的&lt;code&gt;theme&lt;/code&gt;中&lt;code&gt;archetypes&lt;/code&gt;文件夹内提供的模板了。我这个主题提供的模板如下：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-md&#34; data-lang=&#34;md&#34;&gt;+++
-title = &amp;#34;hugo博客&amp;#34; 
-date = &amp;#34;2021-05-29&amp;#34;
-author = &amp;#34;kasusa&amp;#34;
-cover = &amp;#34;https://tvax1.sinaimg.cn/...&amp;#34;
-tags = [&amp;#34;博客&amp;#34;, &amp;#34;hugo&amp;#34;]
-keywords = [&amp;#34;hugo2&amp;#34;, &amp;#34;&amp;#34;]
-description = &amp;#34;今天我建立了我的hugo博客&amp;#34;
-showFullContent = false
-+++
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;我感觉他已经很明白了，但是我遇到了一个坑就是日期，我打成了2021-5-29在预览的时候就会显示成00-01-00，要注意日期格式必须相同哦！&lt;/p&gt;
-&lt;h3 id=&#34;实时预览&#34;&gt;实时预览&lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;hugo server -t terminal -p 51000&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;-t&lt;/code&gt;是自定义主题，&lt;code&gt;-p&lt;/code&gt;是自定义端口，开启成功之后他会根据你后台文件的变化不停的刷新，你可以在&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;localhost:51000&lt;/code&gt; 实时的预览。&lt;/p&gt;
-&lt;h3 id=&#34;编译生成html&#34;&gt;编译生成HTML&lt;/h3&gt;
-&lt;p&gt;在你的项目的目录输入命令（生成到指定目录）：&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;hugo -d C:\Users\kasusa\Documents\GitHub\kasusa.github.io\hugo&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;默认的话文件会生成在&lt;code&gt;public&lt;/code&gt;文件夹。&lt;/p&gt;
-&lt;p&gt;然后就把public文件夹的内容上传到github即可。以后也许会考虑 &lt;a href=&#34;https://yantree.github.io/posts/develop/2020-06-20-action-delopy-github-page/&#34;&gt;使用action自动编译&lt;/a&gt;&lt;/p&gt;
-</content>
     </item>
     
     <item>
