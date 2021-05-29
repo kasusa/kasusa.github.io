@@ -9,10 +9,10 @@
     <lastBuildDate>Sat, 29 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kasusa.github.io/hugo/tags/%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>hugo博客</title>
-      <link>https://kasusa.github.io/hugo/post/hello/</link>
+      <link>https://kasusa.github.io/hugo/post/hugo-newblog/</link>
       <pubDate>Sat, 29 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://kasusa.github.io/hugo/post/hello/</guid>
+      <guid>https://kasusa.github.io/hugo/post/hugo-newblog/</guid>
       <description>剧情介绍  今天yr在我旁边弄新的hugo主题，我感觉他的新主题真的很清新，很不错，然后markdown记录之类的确实要比转化成html再放出来更加简单。不过可定制性没有那么好也是实话。
 这个博客对于语法高亮支持很不错。交互和动画就只能限制于模板（这个语法蛮怪的，可能以后会研究一个自己的模板）所以暂时决定把这个弄成技术类博客。
 我终于能把我的linux小知识都搬过来了！
@@ -102,8 +102,9 @@ showFullContent = false
 &lt;p&gt;&lt;code&gt;-t&lt;/code&gt;是自定义主题，&lt;code&gt;-p&lt;/code&gt;是自定义端口，开启成功之后他会根据你后台文件的变化不停的刷新，你可以在&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;localhost:51000&lt;/code&gt; 实时的预览。&lt;/p&gt;
 &lt;h3 id=&#34;编译生成html&#34;&gt;编译生成HTML&lt;/h3&gt;
-&lt;p&gt;在你的项目的目录输入命令：&lt;code&gt;hugo&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;文件会生成在&lt;code&gt;public&lt;/code&gt;文件夹。&lt;/p&gt;
+&lt;p&gt;在你的项目的目录输入命令（生成到指定目录）：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;hugo -d C:\Users\kasusa\Documents\GitHub\kasusa.github.io\hugo&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;默认的话文件会生成在&lt;code&gt;public&lt;/code&gt;文件夹。&lt;/p&gt;
 &lt;p&gt;然后就把public文件夹的内容上传到github即可。以后也许会考虑 &lt;a href=&#34;https://yantree.github.io/posts/develop/2020-06-20-action-delopy-github-page/&#34;&gt;使用action自动编译&lt;/a&gt;&lt;/p&gt;
 </content>
     </item>
