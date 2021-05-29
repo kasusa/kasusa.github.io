@@ -23,7 +23,8 @@ pwershell安装hugo choco install hugo
  主题市场 terminal主题(我现在用的)  配置主题 配置主题需要根据不同的主题情况,各有不同，对于我这个主题来说我要把博客官方的 config.toml 粘贴到hugo项目中，并且进行了一点修改。遇到了一点坑，我在后面注释，你可以看一下。
 toml文件：
 baseurl = &amp;#34;&amp;#34; #这个要设为空，否则生成的东西css会找不到。 languageCode = &amp;#34;en-us&amp;#34; theme = &amp;#34;terminal&amp;#34; # theme 原本github上提供的版本是 &amp;#34;hugo-theme-terminal&amp;#34;， # 但是会造成编译错误，故修改 paginate = 5 [params] contentTypeName = &amp;#34;post&amp;#34; themeColor = &amp;#34;red&amp;#34; #选择主题 showMenuItems = 2 #选择显示在顶部的导航链接数目，超出的会折叠。 #链接具体目录可以在下面修改 fullWidthTheme = false centerTheme = false [languages] [languages.</description>
-      <content>&lt;h3 id=&#34;剧情介绍&#34;&gt;剧情介绍&lt;/h3&gt;
+      <content>&lt;p&gt;&lt;img src=&#34;https://tvax1.sinaimg.cn/large/0083vuQJgy1gqzlm00z45j30hs06z0sq.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;剧情介绍&#34;&gt;剧情介绍&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;今天yr在我旁边弄新的hugo主题，我感觉他的新主题真的很清新，很不错，然后markdown记录之类的确实要比转化成html再放出来更加简单。不过可定制性没有那么好也是实话。&lt;/p&gt;
 &lt;p&gt;这个博客对于语法高亮支持很不错。交互和动画就只能限制于模板（这个语法蛮怪的，可能以后会研究一个自己的模板）所以暂时决定把这个弄成技术类博客。&lt;/p&gt;
