@@ -6,7 +6,114 @@
     <description>Recent content in Posts on KASUSA</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 29 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kasusa.github.io/hugo/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kasusa.github.io/hugo/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>linkedlist删除指定值</title>
+      <link>https://kasusa.github.io/hugo/post/linkedlist%E5%88%A0%E9%99%A4%E6%8C%87%E5%AE%9A%E5%80%BC/</link>
+      <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://kasusa.github.io/hugo/post/linkedlist%E5%88%A0%E9%99%A4%E6%8C%87%E5%AE%9A%E5%80%BC/</guid>
+      <description>info是我自己定义的一个类。
+下面是如何删除linklist中指定item的办法。
+LinkedList&amp;lt;info&amp;gt; infolist = new LinkedList&amp;lt;info&amp;gt;(); string todelete = &amp;#34;1&amp;#34;; info tmpitem = new info(); foreach (var item in infolist) { if (item.no == todelete) tmpitem = item; } infolist.Remove(tmpitem); </description>
+      <content>&lt;p&gt;info是我自己定义的一个类。&lt;/p&gt;
+&lt;p&gt;下面是如何删除linklist中指定item的办法。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-cs&#34; data-lang=&#34;cs&#34;&gt;LinkedList&amp;lt;info&amp;gt; infolist = &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; LinkedList&amp;lt;info&amp;gt;();
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt; todelete = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt;;
+
+info tmpitem = &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; info();
+&lt;span style=&#34;color:#66d9ef&#34;&gt;foreach&lt;/span&gt; (&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; item &lt;span style=&#34;color:#66d9ef&#34;&gt;in&lt;/span&gt; infolist)
+{
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (item.no == todelete)
+        tmpitem = item;
+}
+infolist.Remove(tmpitem);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
+    </item>
+    
+    <item>
+      <title>保存object到xml</title>
+      <link>https://kasusa.github.io/hugo/post/%E4%BF%9D%E5%AD%98%E4%BB%BB%E6%84%8Fobject%E5%88%B0%E6%96%87%E4%BB%B6/</link>
+      <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://kasusa.github.io/hugo/post/%E4%BF%9D%E5%AD%98%E4%BB%BB%E6%84%8Fobject%E5%88%B0%E6%96%87%E4%BB%B6/</guid>
+      <description>对实体类做标记  [DataContract] 标记在class前。
+ [DataMember] 标记在需要保存的属性前。
+[DataContract] public class Car { [DataMember] public string name; [DataMember] double power; [DataMember] List&amp;lt;Wheel&amp;gt; wheels; } 拷贝这两个函数 保存：保存文件到xml，文件目录和程序目录相同，文件名自定。
+读取：从指定文件名读取。
+static void SaveViaDataContractSerialization&amp;lt;T&amp;gt;(T serializableObject, string filepath) { var serializer = new DataContractSerializer(typeof(T)); var settings = new XmlWriterSettings() { Indent = true, IndentChars = &amp;#34;\t&amp;#34;, }; var writer = XmlWriter.Create(filepath, settings); serializer.WriteObject(writer, serializableObject); writer.Close(); } static T LoadViaDataContractSerialization&amp;lt;T&amp;gt;(string filepath) { var fileStream = new FileStream(filepath, FileMode.</description>
+      <content>&lt;h2 id=&#34;对实体类做标记&#34;&gt;对实体类做标记&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt; [DataContract]&lt;/code&gt; 标记在class前。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt; [DataMember]&lt;/code&gt; 标记在需要保存的属性前。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-cs&#34; data-lang=&#34;cs&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt; [DataContract]&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Car&lt;/span&gt;
+{
+&lt;span style=&#34;color:#a6e22e&#34;&gt;  [DataMember]&lt;/span&gt;
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt; name;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;  [DataMember]&lt;/span&gt;
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;double&lt;/span&gt; power;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;  [DataMember]&lt;/span&gt;
+  List&amp;lt;Wheel&amp;gt; wheels;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;拷贝这两个函数&#34;&gt;拷贝这两个函数&lt;/h2&gt;
+&lt;p&gt;保存：保存文件到xml，文件目录和程序目录相同，文件名自定。&lt;/p&gt;
+&lt;p&gt;读取：从指定文件名读取。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-cs&#34; data-lang=&#34;cs&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;static&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; SaveViaDataContractSerialization&amp;lt;T&amp;gt;(T serializableObject, &lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt; filepath)
+{
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; serializer = &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; DataContractSerializer(&lt;span style=&#34;color:#66d9ef&#34;&gt;typeof&lt;/span&gt;(T));
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; settings = &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; XmlWriterSettings()
+  {
+    Indent = &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;,
+    IndentChars = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;\t&amp;#34;&lt;/span&gt;,
+  };
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; writer = XmlWriter.Create(filepath, settings);
+  serializer.WriteObject(writer, serializableObject);
+  writer.Close();
+}
+
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;static&lt;/span&gt; T LoadViaDataContractSerialization&amp;lt;T&amp;gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt; filepath)
+{
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; fileStream = &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; FileStream(filepath, FileMode.Open);
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; reader = XmlDictionaryReader.CreateTextReader(fileStream, &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; XmlDictionaryReaderQuotas());
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; serializer = &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; DataContractSerializer(&lt;span style=&#34;color:#66d9ef&#34;&gt;typeof&lt;/span&gt;(T));
+  T serializableObject = (T)serializer.ReadObject(reader, &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;);
+  reader.Close();
+  fileStream.Close();
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; serializableObject;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;读取方法&#34;&gt;读取方法&lt;/h2&gt;
+&lt;p&gt;使用上面两个方法来读取和存储&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-csharp&#34; data-lang=&#34;csharp&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// Save single object
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;Car bmw = &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; Car(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;BMW&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;200&lt;/span&gt;, &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; List&amp;lt;&lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt;&amp;gt; { &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Left&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Right&amp;#34;&lt;/span&gt; });    &lt;span style=&#34;color:#75715e&#34;&gt;// create object
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;SaveViaDataContractSerialization(bmw, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;bmw.xml&amp;#34;&lt;/span&gt;);                       &lt;span style=&#34;color:#75715e&#34;&gt;// save object
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;bmw = &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;;                                                             &lt;span style=&#34;color:#75715e&#34;&gt;// delete object
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;bmw = LoadViaDataContractSerialization&amp;lt;Car&amp;gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;bmw.xml&amp;#34;&lt;/span&gt;);                 &lt;span style=&#34;color:#75715e&#34;&gt;// reload object
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;Console.WriteLine(bmw.ToString());                                      &lt;span style=&#34;color:#75715e&#34;&gt;// print object
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;
+
+&lt;span style=&#34;color:#75715e&#34;&gt;// Save list of objects
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;List&amp;lt;Car&amp;gt; carList = &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; List&amp;lt;Car&amp;gt;                                       &lt;span style=&#34;color:#75715e&#34;&gt;// create object list
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;{
+&lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; Car(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Porsche&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;250&lt;/span&gt;, &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; List&amp;lt;&lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt;&amp;gt; { &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Left&amp;#34;&lt;/span&gt; }),
+&lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; Car(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Mercedes&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;150&lt;/span&gt;, &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; List&amp;lt;&lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt;&amp;gt; { &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Front&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Back&amp;#34;&lt;/span&gt; }),
+&lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; Car(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Aston Martin&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;300&lt;/span&gt;, &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; List&amp;lt;&lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt;&amp;gt; { &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Front&amp;#34;&lt;/span&gt; })
+};
+SaveViaDataContractSerialization(carList, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;cars.xml&amp;#34;&lt;/span&gt;);                  &lt;span style=&#34;color:#75715e&#34;&gt;// save object list
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;carList = &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;;                                                         &lt;span style=&#34;color:#75715e&#34;&gt;// delete object list
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;carList = LoadViaDataContractSerialization&amp;lt;List&amp;lt;Car&amp;gt;&amp;gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;cars.xml&amp;#34;&lt;/span&gt;);      &lt;span style=&#34;color:#75715e&#34;&gt;// reload object list
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;foreach&lt;/span&gt; (&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; a &lt;span style=&#34;color:#66d9ef&#34;&gt;in&lt;/span&gt; carList)                                              &lt;span style=&#34;color:#75715e&#34;&gt;// print object list
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;Console.WriteLine(a.ToString());
+
+Console.ReadLine();
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;原视频：&lt;a href=&#34;https://www.youtube.com/watch?v=GzZu3eYDBmM&#34;&gt;https://www.youtube.com/watch?v=GzZu3eYDBmM&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;demo代码：&lt;a href=&#34;https://pastebin.com/mRTmdiK5&#34;&gt;https://pastebin.com/mRTmdiK5&lt;/a&gt;&lt;/p&gt;
+</content>
+    </item>
+    
     <item>
       <title>corntab计划任务</title>
       <link>https://kasusa.github.io/hugo/post/corntab-%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1/</link>

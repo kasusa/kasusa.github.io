@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>保存object到xml :: KASUSA</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="使用到了datacontract" />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://kasusa.github.io/hugo/post/%E4%BF%9D%E5%AD%98%E4%BB%BB%E6%84%8Fobject%E5%88%B0%E6%96%87%E4%BB%B6/" />
+
+
+
+
+<link rel="stylesheet" href="https://kasusa.github.io/hugo/assets/style.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon" href="https://kasusa.github.io/hugo/img/apple-touch-icon-192x192.png">
+
+  <link rel="shortcut icon" href="https://kasusa.github.io/hugo/img/favicon/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="保存object到xml">
+<meta property="og:description" content="使用到了datacontract" />
+<meta property="og:url" content="https://kasusa.github.io/hugo/post/%E4%BF%9D%E5%AD%98%E4%BB%BB%E6%84%8Fobject%E5%88%B0%E6%96%87%E4%BB%B6/" />
+<meta property="og:site_name" content="KASUSA" />
+
+  <meta property="og:image" content="https://kasusa.github.io/hugo/">
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+  <meta property="article:published_time" content="2021-06-01 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/hugo/">
+    <div class="logo">
+        KASUSA
+    </div>
+</a>
+    </div>
+    
+      <div class="menu-trigger">menu</div>
+    
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/hugo/links">中转站</a></li>
+        
+      
+        
+          <li><a href="/hugo/contact">交个朋友</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/hugo/links">中转站</a></li>
+      
+    
+      
+        <li><a href="/hugo/contact">交个朋友</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="https://kasusa.github.io/hugo/post/%E4%BF%9D%E5%AD%98%E4%BB%BB%E6%84%8Fobject%E5%88%B0%E6%96%87%E4%BB%B6/">保存object到xml</a></h1>
+  <div class="post-meta">
+    
+      <span class="post-date">
+        2021-06-01 
+      </span>
+    
+    
+    <span class="post-author">:: kasusa</span>
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="https://kasusa.github.io/hugo/tags/csharp/">csharp</a>&nbsp;
+    
+  </span>
+  
+
+  
+
+  
+
+  <div class="post-content"><div>
+        <h2 id="对实体类做标记">对实体类做标记<a href="#对实体类做标记" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p><code> [DataContract]</code> 标记在class前。</p>
+<p><code> [DataMember]</code> 标记在需要保存的属性前。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cs" data-lang="cs"><span style="color:#a6e22e"> [DataContract]</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Car</span>
+{
+<span style="color:#a6e22e">  [DataMember]</span>
+  <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">string</span> name;
+<span style="color:#a6e22e">
+</span><span style="color:#a6e22e">  [DataMember]</span>
+  <span style="color:#66d9ef">double</span> power;
+<span style="color:#a6e22e">
+</span><span style="color:#a6e22e">  [DataMember]</span>
+  List&lt;Wheel&gt; wheels;
+}
+</code></pre></div><h2 id="拷贝这两个函数">拷贝这两个函数<a href="#拷贝这两个函数" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>保存：保存文件到xml，文件目录和程序目录相同，文件名自定。</p>
+<p>读取：从指定文件名读取。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cs" data-lang="cs"><span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> SaveViaDataContractSerialization&lt;T&gt;(T serializableObject, <span style="color:#66d9ef">string</span> filepath)
+{
+  <span style="color:#66d9ef">var</span> serializer = <span style="color:#66d9ef">new</span> DataContractSerializer(<span style="color:#66d9ef">typeof</span>(T));
+  <span style="color:#66d9ef">var</span> settings = <span style="color:#66d9ef">new</span> XmlWriterSettings()
+  {
+    Indent = <span style="color:#66d9ef">true</span>,
+    IndentChars = <span style="color:#e6db74">&#34;\t&#34;</span>,
+  };
+  <span style="color:#66d9ef">var</span> writer = XmlWriter.Create(filepath, settings);
+  serializer.WriteObject(writer, serializableObject);
+  writer.Close();
+}
+
+
+<span style="color:#66d9ef">static</span> T LoadViaDataContractSerialization&lt;T&gt;(<span style="color:#66d9ef">string</span> filepath)
+{
+  <span style="color:#66d9ef">var</span> fileStream = <span style="color:#66d9ef">new</span> FileStream(filepath, FileMode.Open);
+  <span style="color:#66d9ef">var</span> reader = XmlDictionaryReader.CreateTextReader(fileStream, <span style="color:#66d9ef">new</span> XmlDictionaryReaderQuotas());
+  <span style="color:#66d9ef">var</span> serializer = <span style="color:#66d9ef">new</span> DataContractSerializer(<span style="color:#66d9ef">typeof</span>(T));
+  T serializableObject = (T)serializer.ReadObject(reader, <span style="color:#66d9ef">true</span>);
+  reader.Close();
+  fileStream.Close();
+  <span style="color:#66d9ef">return</span> serializableObject;
+}
+</code></pre></div><h2 id="读取方法">读取方法<a href="#读取方法" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>使用上面两个方法来读取和存储</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#75715e">// Save single object
+</span><span style="color:#75715e"></span>Car bmw = <span style="color:#66d9ef">new</span> Car(<span style="color:#e6db74">&#34;BMW&#34;</span>, <span style="color:#ae81ff">200</span>, <span style="color:#66d9ef">new</span> List&lt;<span style="color:#66d9ef">string</span>&gt; { <span style="color:#e6db74">&#34;Left&#34;</span>, <span style="color:#e6db74">&#34;Right&#34;</span> });    <span style="color:#75715e">// create object
+</span><span style="color:#75715e"></span>SaveViaDataContractSerialization(bmw, <span style="color:#e6db74">&#34;bmw.xml&#34;</span>);                       <span style="color:#75715e">// save object
+</span><span style="color:#75715e"></span>bmw = <span style="color:#66d9ef">null</span>;                                                             <span style="color:#75715e">// delete object
+</span><span style="color:#75715e"></span>bmw = LoadViaDataContractSerialization&lt;Car&gt;(<span style="color:#e6db74">&#34;bmw.xml&#34;</span>);                 <span style="color:#75715e">// reload object
+</span><span style="color:#75715e"></span>Console.WriteLine(bmw.ToString());                                      <span style="color:#75715e">// print object
+</span><span style="color:#75715e"></span>
+
+<span style="color:#75715e">// Save list of objects
+</span><span style="color:#75715e"></span>List&lt;Car&gt; carList = <span style="color:#66d9ef">new</span> List&lt;Car&gt;                                       <span style="color:#75715e">// create object list
+</span><span style="color:#75715e"></span>{
+<span style="color:#66d9ef">new</span> Car(<span style="color:#e6db74">&#34;Porsche&#34;</span>, <span style="color:#ae81ff">250</span>, <span style="color:#66d9ef">new</span> List&lt;<span style="color:#66d9ef">string</span>&gt; { <span style="color:#e6db74">&#34;Left&#34;</span> }),
+<span style="color:#66d9ef">new</span> Car(<span style="color:#e6db74">&#34;Mercedes&#34;</span>, <span style="color:#ae81ff">150</span>, <span style="color:#66d9ef">new</span> List&lt;<span style="color:#66d9ef">string</span>&gt; { <span style="color:#e6db74">&#34;Front&#34;</span>, <span style="color:#e6db74">&#34;Back&#34;</span> }),
+<span style="color:#66d9ef">new</span> Car(<span style="color:#e6db74">&#34;Aston Martin&#34;</span>, <span style="color:#ae81ff">300</span>, <span style="color:#66d9ef">new</span> List&lt;<span style="color:#66d9ef">string</span>&gt; { <span style="color:#e6db74">&#34;Front&#34;</span> })
+};
+SaveViaDataContractSerialization(carList, <span style="color:#e6db74">&#34;cars.xml&#34;</span>);                  <span style="color:#75715e">// save object list
+</span><span style="color:#75715e"></span>carList = <span style="color:#66d9ef">null</span>;                                                         <span style="color:#75715e">// delete object list
+</span><span style="color:#75715e"></span>carList = LoadViaDataContractSerialization&lt;List&lt;Car&gt;&gt;(<span style="color:#e6db74">&#34;cars.xml&#34;</span>);      <span style="color:#75715e">// reload object list
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">foreach</span> (<span style="color:#66d9ef">var</span> a <span style="color:#66d9ef">in</span> carList)                                              <span style="color:#75715e">// print object list
+</span><span style="color:#75715e"></span>Console.WriteLine(a.ToString());
+
+Console.ReadLine();
+</code></pre></div><p>原视频：<a href="https://www.youtube.com/watch?v=GzZu3eYDBmM">https://www.youtube.com/watch?v=GzZu3eYDBmM</a></p>
+<p>demo代码：<a href="https://pastebin.com/mRTmdiK5">https://pastebin.com/mRTmdiK5</a></p>
+
+      </div></div>
+
+  
+  
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h">看看别的</span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        <span class="button previous">
+            <a href="https://kasusa.github.io/hugo/post/linkedlist%E5%88%A0%E9%99%A4%E6%8C%87%E5%AE%9A%E5%80%BC/">
+                <span class="button__icon">←</span>
+                <span class="button__text">linkedlist删除指定值</span>
+            </a>
+        </span>
+        
+        
+        <span class="button next">
+            <a href="https://kasusa.github.io/hugo/post/corntab-%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1/">
+                <span class="button__text">corntab计划任务</span>
+                <span class="button__icon">→</span>
+            </a>
+        </span>
+        
+    </div>
+</div>
+
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2021 Powered by <a href="http://gohugo.io">Hugo</a></span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="https://kasusa.github.io/hugo/assets/main.js"></script>
+<script src="https://kasusa.github.io/hugo/assets/prism.js"></script>
+
+
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>
