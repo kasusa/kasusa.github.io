@@ -1,53 +1,62 @@
-<style>
-    body {
-        font-size: 40px;
-        background-color: rgb(184, 88, 88);
-    }
-    
-    .center {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        /* bring your own prefixes */
-        transform: translate(-50%, -50%);
-    }
-    
-    a {
-        text-decoration: none;
-        transition: 0.2s;
-        color: rgba(204, 204, 207, 0.637);
-    }
-    
-    a:hover {
-        color: aqua;
-    }
-    
-    img {
-        width: 180px;
-        padding: 5px;
-        border: 2px solid #443f3f;
-        background: #333333;
-    }
-    
-    .one {
-        list-style: kannada;
-    }
-</style>
+<!DOCTYPE html>
+<html lang="en">
 
-<body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/indexstyle.css" rel="stylesheet" type="text/css" />
+    <title>Document</title>
+    <style>
+        .message {
+            margin-left: 14px !important;
+        }
+        
+        a {
+            color: #9de4ff;
+            text-decoration: none;
+            font-size: 1.5em;
+            transition: 0.2s;
+        }
+        
+        a:hover {
+            color: #e2f7ff;
+            text-decoration: underline;
+            font-size: 1.9em;
+        }
+    </style>
+</head>
 
-    <div class="center">
-        <ul class="one">
-            <li><a href="https://kasusa.github.io/hugo/">技术博客</a></li>
-            <li><a href="https://kasusaland.blogspot.com/">生活娱乐</a></li>
-            <li><a href="https://kasusa.github.io/index2">陈年旧址</a></li>
-            <li><a href="https://kasusa.github.io/lab">小实验室</a></li>
-        </ul>
+<div class="chat">
+    <div class="chat-title">
+        <h1>kasusa</h1>
+        <h2>blogs</h2>
+        <figure class="avatar">
+            <img src="https://tvax4.sinaimg.cn/large/0083vuQJgy1gr3xunde6fj30890893yy.jpg" />
+        </figure>
+    </div>
+    <div class="messages">
+        <div class="messages-content">
+            <div class="message new">
+                欢迎来我的小站,你可以进去下面任何一个
+            </div>
+
+            <div class="message new">
+                <a href="https://kasusa.github.io/hugo/">技术博客</a></li><br>
+                <a href="https://kasusaland.blogspot.com/">生活娱乐</a></li><br>
+                <a href="https://kasusa.github.io/index2">陈年旧址</a></li><br>
+                <a href="https://kasusa.github.io/lab">小实验室</a></li><br>
+            </div>
+            <div class="message new" style="max-width: 240px;">
+                技术博客主要是一些代码相关的内容。 生活博客是kasusa的blogger，没有代理，有点难进去。 陈年旧址是最开始kasusa学html和css的时候写的。小实验室里面是一些项目、好玩的之类的。
+            </div>
+        </div>
 
     </div>
-    <center>
-        <img src="https://tvax4.sinaimg.cn/large/0083vuQJgy1gr2x2cjg0kg30du0abhdt.gif" alt="">
+</div>
+<div class="bg"></div>
+<script type="text/javascript" src="/src/js/index.js"></script>
+<script>
+</script>
 
-    </center>
-
-</body>
+</html>
