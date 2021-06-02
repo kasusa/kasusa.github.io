@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>winform on KASUSA</title>
+    <link>https://kasusa.github.io/hugo/tags/winform/</link>
+    <description>Recent content in winform on KASUSA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 02 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kasusa.github.io/hugo/tags/winform/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>c#打开指定文件夹和选定文件</title>
+      <link>https://kasusa.github.io/hugo/post/csharp%E6%89%93%E5%BC%80%E6%8C%87%E5%AE%9A%E6%96%87%E4%BB%B6%E5%A4%B9%E5%92%8C%E9%80%89%E5%AE%9A%E6%96%87%E4%BB%B6/</link>
+      <pubDate>Wed, 02 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://kasusa.github.io/hugo/post/csharp%E6%89%93%E5%BC%80%E6%8C%87%E5%AE%9A%E6%96%87%E4%BB%B6%E5%A4%B9%E5%92%8C%E9%80%89%E5%AE%9A%E6%96%87%E4%BB%B6/</guid>
+      <description>private void openExplorer() { string FilePath = Directory.GetCurrentDirectory(); //打开文件夹并选中文件  System.Diagnostics.Process.Start(&amp;#34;Explorer&amp;#34;, &amp;#34;/select,&amp;#34; + FilePath + &amp;#34;\\&amp;#34; + &amp;#34;infolist.xml&amp;#34;); //仅打开文件夹  System.Diagnostics.Process.Start(FilePath); } </description>
+      <content>&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-csharp&#34; data-lang=&#34;csharp&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;private&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; openExplorer()
+{
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt; FilePath = Directory.GetCurrentDirectory();
+  &lt;span style=&#34;color:#75715e&#34;&gt;//打开文件夹并选中文件
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;  System.Diagnostics.Process.Start(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Explorer&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/select,&amp;#34;&lt;/span&gt; + FilePath + &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;\\&amp;#34;&lt;/span&gt; + &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;infolist.xml&amp;#34;&lt;/span&gt;); 
+  &lt;span style=&#34;color:#75715e&#34;&gt;//仅打开文件夹
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;  System.Diagnostics.Process.Start(FilePath);
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
+    </item>
+    
+    <item>
+      <title>winform适配dpi</title>
+      <link>https://kasusa.github.io/hugo/post/winform%E9%80%82%E9%85%8Ddpi/</link>
+      <pubDate>Wed, 02 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://kasusa.github.io/hugo/post/winform%E9%80%82%E9%85%8Ddpi/</guid>
+      <description>https://zhuanlan.zhihu.com/p/128588859
+在项目中添加一个：应用程序清单文件
+在清单文件app.manifest的 &amp;lt;/assembly&amp;gt; 标签下添加
+&amp;lt;application xmlns=&amp;#34;urn:schemas-microsoft-com:asm.v3&amp;#34;&amp;gt; &amp;lt;windowsSettings&amp;gt; &amp;lt;dpiAware xmlns=&amp;#34;http://schemas.microsoft.com/SMI/2005/WindowsSettings&amp;#34;&amp;gt;true&amp;lt;/dpiAware&amp;gt; &amp;lt;/windowsSettings&amp;gt; &amp;lt;/application&amp;gt; 适配DPI之后，即便是电脑dpi为缩放的情况下， 仍然可以清晰的显示文字。</description>
+      <content>&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/128588859&#34;&gt;https://zhuanlan.zhihu.com/p/128588859&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;在项目中添加一个：&lt;strong&gt;应用程序清单文件&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在清单文件&lt;code&gt;app.manifest&lt;/code&gt;的 &lt;code&gt;&amp;lt;/assembly&amp;gt;&lt;/code&gt; 标签下添加&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;application&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;xmlns=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;urn:schemas-microsoft-com:asm.v3&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;windowsSettings&amp;gt;&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;dpiAware&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;xmlns=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;http://schemas.microsoft.com/SMI/2005/WindowsSettings&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;true&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/dpiAware&amp;gt;&lt;/span&gt;
+  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/windowsSettings&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/application&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;适配DPI之后，即便是电脑dpi为缩放的情况下， 仍然可以清晰的显示文字。&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>归档辅助小程序</title>
+      <link>https://kasusa.github.io/hugo/post/%E5%BD%92%E6%A1%A3%E8%BE%85%E5%8A%A9%E5%B0%8F%E7%A8%8B%E5%BA%8F/</link>
+      <pubDate>Wed, 02 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://kasusa.github.io/hugo/post/%E5%BD%92%E6%A1%A3%E8%BE%85%E5%8A%A9%E5%B0%8F%E7%A8%8B%E5%BA%8F/</guid>
+      <description>最近写了一个工作用的小程序：
+然后从开始写到现在大概花了5小时左右。用到了系统剪切板、listbox、object序列化并存储为xml、打开指定文件夹并选中指定文件。还有就是一些winform上的设计。
+你可以看到右下角的按钮，我感觉把那几个按钮摆在那个位置真的是太天才了，而且那些个按钮都是emoji，并没有用图片，整个程序仍然很小巧。</description>
+      <content>&lt;p&gt;最近写了一个工作用的小程序：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://tvax4.sinaimg.cn/large/0083vuQJgy1gr3yqkjymlj30mg0blt9a.jpg&#34; alt=&#34;s&#34;&gt;&lt;/p&gt;
+&lt;p&gt;然后从开始写到现在大概花了5小时左右。用到了系统剪切板、listbox、object序列化并存储为xml、打开指定文件夹并选中指定文件。还有就是一些winform上的设计。&lt;/p&gt;
+&lt;p&gt;你可以看到右下角的按钮，我感觉把那几个按钮摆在那个位置真的是太天才了，而且那些个按钮都是emoji，并没有用图片，整个程序仍然很小巧。&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>
