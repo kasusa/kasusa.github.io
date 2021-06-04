@@ -6,15 +6,18 @@
     <description>Recent content in winform on KASUSA</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 02 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kasusa.github.io/hugo/tags/winform/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 04 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kasusa.github.io/hugo/tags/winform/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>c#打开指定文件夹和选定文件</title>
+      <title>c#文件管理器、读取文件列表</title>
       <link>https://kasusa.github.io/hugo/post/csharp%E6%89%93%E5%BC%80%E6%8C%87%E5%AE%9A%E6%96%87%E4%BB%B6%E5%A4%B9%E5%92%8C%E9%80%89%E5%AE%9A%E6%96%87%E4%BB%B6/</link>
-      <pubDate>Wed, 02 Jun 2021 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 04 Jun 2021 00:00:00 +0000</pubDate>
       
       <guid>https://kasusa.github.io/hugo/post/csharp%E6%89%93%E5%BC%80%E6%8C%87%E5%AE%9A%E6%96%87%E4%BB%B6%E5%A4%B9%E5%92%8C%E9%80%89%E5%AE%9A%E6%96%87%E4%BB%B6/</guid>
-      <description>private void openExplorer() { string FilePath = Directory.GetCurrentDirectory(); //打开文件夹并选中文件  System.Diagnostics.Process.Start(&amp;#34;Explorer&amp;#34;, &amp;#34;/select,&amp;#34; + FilePath + &amp;#34;\\&amp;#34; + &amp;#34;infolist.xml&amp;#34;); //仅打开文件夹  System.Diagnostics.Process.Start(FilePath); } </description>
-      <content>&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-csharp&#34; data-lang=&#34;csharp&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;private&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; openExplorer()
+      <description>打开文件夹和选择其中某一项
+private void openExplorer() { string FilePath = Directory.GetCurrentDirectory(); //打开文件夹并选中文件  System.Diagnostics.Process.Start(&amp;#34;Explorer&amp;#34;, &amp;#34;/select,&amp;#34; + FilePath + &amp;#34;\\&amp;#34; + &amp;#34;infolist.xml&amp;#34;); //仅打开文件夹  System.Diagnostics.Process.Start(FilePath); } 读取某位置的指定后缀文件（列表），把名字存入combobox
+//读取xml文件，填充combobox列表 public void getCombobox() { comboBox1.Items.Clear(); //获取当前程序目录，获取所有xml文件绝对地址  var files = Directory .GetFiles(Directory.GetCurrentDirectory(), &amp;#34;*.xml&amp;#34;); //提取路径地址+/为了在后面把完整路径剔除  string pathstr = Directory.GetCurrentDirectory()+&amp;#34;\\&amp;#34; ; int count = 0; foreach (var file in files) { //逐个把文件名放在combox中  comboBox1.Items.Add(file.ToString().Replace(pathstr, &amp;#34;&amp;#34;)); count++; } toolStripStatusLabel1.Text = $&amp;#34;读取到了【{count}】个xml文件。&amp;#34;; } </description>
+      <content>&lt;p&gt;打开文件夹和选择其中某一项&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-csharp&#34; data-lang=&#34;csharp&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;private&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; openExplorer()
 {
   &lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt; FilePath = Directory.GetCurrentDirectory();
   &lt;span style=&#34;color:#75715e&#34;&gt;//打开文件夹并选中文件
@@ -22,6 +25,26 @@
   &lt;span style=&#34;color:#75715e&#34;&gt;//仅打开文件夹
 &lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;  System.Diagnostics.Process.Start(FilePath);
 }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;读取某位置的指定后缀文件（列表），把名字存入combobox&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-cs&#34; data-lang=&#34;cs&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;//读取xml文件，填充combobox列表
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; getCombobox()
+{
+  comboBox1.Items.Clear();
+&lt;span style=&#34;color:#75715e&#34;&gt;//获取当前程序目录，获取所有xml文件绝对地址
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; files = Directory
+    .GetFiles(Directory.GetCurrentDirectory(), &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;*.xml&amp;#34;&lt;/span&gt;);
+  &lt;span style=&#34;color:#75715e&#34;&gt;//提取路径地址+/为了在后面把完整路径剔除
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt; pathstr = Directory.GetCurrentDirectory()+&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;\\&amp;#34;&lt;/span&gt; ;
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; count = &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;foreach&lt;/span&gt; (&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; file &lt;span style=&#34;color:#66d9ef&#34;&gt;in&lt;/span&gt; files)
+  {
+    &lt;span style=&#34;color:#75715e&#34;&gt;//逐个把文件名放在combox中
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    comboBox1.Items.Add(file.ToString().Replace(pathstr, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;));
+    count++;
+  }
+  toolStripStatusLabel1.Text = &lt;span style=&#34;color:#e6db74&#34;&gt;$&amp;#34;读取到了【{count}】个xml文件。&amp;#34;&lt;/span&gt;;
+}
+
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
     </item>
     
@@ -53,11 +76,11 @@
       <pubDate>Wed, 02 Jun 2021 00:00:00 +0000</pubDate>
       
       <guid>https://kasusa.github.io/hugo/post/%E5%BD%92%E6%A1%A3%E8%BE%85%E5%8A%A9%E5%B0%8F%E7%A8%8B%E5%BA%8F/</guid>
-      <description>最近写了一个工作用的小程序：
+      <description>最近写了一个工作用的小程序：https://github.com/kasusa/archive_helper
 然后从开始写到现在大概花了5小时左右。用到了系统剪切板、listbox、object序列化并存储为xml、打开指定文件夹并选中指定文件。还有就是一些winform上的设计。
 你可以看到右下角的按钮，我感觉把那几个按钮摆在那个位置真的是太天才了，而且那些个按钮都是emoji，并没有用图片，整个程序仍然很小巧。</description>
-      <content>&lt;p&gt;最近写了一个工作用的小程序：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://tvax4.sinaimg.cn/large/0083vuQJgy1gr3yqkjymlj30mg0blt9a.jpg&#34; alt=&#34;s&#34;&gt;&lt;/p&gt;
+      <content>&lt;p&gt;最近写了一个工作用的小程序：&lt;a href=&#34;https://github.com/kasusa/archive_helper&#34;&gt;https://github.com/kasusa/archive_helper&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://tva2.sinaimg.cn/large/0083vuQJgy1gr3z92ku8wj30mg0blq3h.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;然后从开始写到现在大概花了5小时左右。用到了系统剪切板、listbox、object序列化并存储为xml、打开指定文件夹并选中指定文件。还有就是一些winform上的设计。&lt;/p&gt;
 &lt;p&gt;你可以看到右下角的按钮，我感觉把那几个按钮摆在那个位置真的是太天才了，而且那些个按钮都是emoji，并没有用图片，整个程序仍然很小巧。&lt;/p&gt;
 </content>

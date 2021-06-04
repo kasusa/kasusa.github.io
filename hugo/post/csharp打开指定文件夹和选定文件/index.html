@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
   
-    <title>c#打开指定文件夹和选定文件 :: KASUSA</title>
+    <title>c#文件管理器、读取文件列表 :: KASUSA</title>
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="c#教程" />
-<meta name="keywords" content=", " />
+<meta name="description" content="c#打开文件管理器、选取文件、获取文件列表" />
+<meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
 <link rel="canonical" href="https://kasusa.github.io/hugo/post/csharp%E6%89%93%E5%BC%80%E6%8C%87%E5%AE%9A%E6%96%87%E4%BB%B6%E5%A4%B9%E5%92%8C%E9%80%89%E5%AE%9A%E6%96%87%E4%BB%B6/" />
 
@@ -33,8 +33,8 @@
 
 <meta property="og:locale" content="en" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="c#打开指定文件夹和选定文件">
-<meta property="og:description" content="c#教程" />
+<meta property="og:title" content="c#文件管理器、读取文件列表">
+<meta property="og:description" content="c#打开文件管理器、选取文件、获取文件列表" />
 <meta property="og:url" content="https://kasusa.github.io/hugo/post/csharp%E6%89%93%E5%BC%80%E6%8C%87%E5%AE%9A%E6%96%87%E4%BB%B6%E5%A4%B9%E5%92%8C%E9%80%89%E5%AE%9A%E6%96%87%E4%BB%B6/" />
 <meta property="og:site_name" content="KASUSA" />
 
@@ -44,7 +44,7 @@
 <meta property="og:image:height" content="1024">
 
 
-  <meta property="article:published_time" content="2021-06-02 00:00:00 &#43;0000 UTC" />
+  <meta property="article:published_time" content="2021-06-04 00:00:00 &#43;0000 UTC" />
 
 
 
@@ -117,11 +117,11 @@
     
 <div class="post">
   <h1 class="post-title">
-    <a href="https://kasusa.github.io/hugo/post/csharp%E6%89%93%E5%BC%80%E6%8C%87%E5%AE%9A%E6%96%87%E4%BB%B6%E5%A4%B9%E5%92%8C%E9%80%89%E5%AE%9A%E6%96%87%E4%BB%B6/">c#打开指定文件夹和选定文件</a></h1>
+    <a href="https://kasusa.github.io/hugo/post/csharp%E6%89%93%E5%BC%80%E6%8C%87%E5%AE%9A%E6%96%87%E4%BB%B6%E5%A4%B9%E5%92%8C%E9%80%89%E5%AE%9A%E6%96%87%E4%BB%B6/">c#文件管理器、读取文件列表</a></h1>
   <div class="post-meta">
     
       <span class="post-date">
-        2021-06-02 
+        2021-06-04 
       </span>
     
     
@@ -144,7 +144,8 @@
   
 
   <div class="post-content"><div>
-        <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> openExplorer()
+        <p>打开文件夹和选择其中某一项</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> openExplorer()
 {
   <span style="color:#66d9ef">string</span> FilePath = Directory.GetCurrentDirectory();
   <span style="color:#75715e">//打开文件夹并选中文件
@@ -152,6 +153,26 @@
   <span style="color:#75715e">//仅打开文件夹
 </span><span style="color:#75715e"></span>  System.Diagnostics.Process.Start(FilePath);
 }
+</code></pre></div><p>读取某位置的指定后缀文件（列表），把名字存入combobox</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cs" data-lang="cs"><span style="color:#75715e">//读取xml文件，填充combobox列表
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> getCombobox()
+{
+  comboBox1.Items.Clear();
+<span style="color:#75715e">//获取当前程序目录，获取所有xml文件绝对地址
+</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">var</span> files = Directory
+    .GetFiles(Directory.GetCurrentDirectory(), <span style="color:#e6db74">&#34;*.xml&#34;</span>);
+  <span style="color:#75715e">//提取路径地址+/为了在后面把完整路径剔除
+</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">string</span> pathstr = Directory.GetCurrentDirectory()+<span style="color:#e6db74">&#34;\\&#34;</span> ;
+  <span style="color:#66d9ef">int</span> count = <span style="color:#ae81ff">0</span>;
+  <span style="color:#66d9ef">foreach</span> (<span style="color:#66d9ef">var</span> file <span style="color:#66d9ef">in</span> files)
+  {
+    <span style="color:#75715e">//逐个把文件名放在combox中
+</span><span style="color:#75715e"></span>    comboBox1.Items.Add(file.ToString().Replace(pathstr, <span style="color:#e6db74">&#34;&#34;</span>));
+    count++;
+  }
+  toolStripStatusLabel1.Text = <span style="color:#e6db74">$&#34;读取到了【{count}】个xml文件。&#34;</span>;
+}
+
 </code></pre></div>
       </div></div>
 

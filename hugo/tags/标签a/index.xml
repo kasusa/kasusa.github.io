@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>标签A on KASUSA</title>
+    <link>https://kasusa.github.io/hugo/tags/%E6%A0%87%E7%AD%BEa/</link>
+    <description>Recent content in 标签A on KASUSA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://kasusa.github.io/hugo/tags/%E6%A0%87%E7%AD%BEa/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>魔板文件</title>
+      <link>https://kasusa.github.io/hugo/post/aaaauntitled/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kasusa.github.io/hugo/post/aaaauntitled/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+  </channel>
+</rss>
