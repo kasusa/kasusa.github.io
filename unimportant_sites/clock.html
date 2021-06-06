@@ -90,12 +90,14 @@
         <button onclick="theme1()">夜光</button>
         <button onclick="theme4()">隐匿</button> ||
         <button onclick="openFullscreen()">全屏</button>
+        <button onclick="fontsizeIncrease()">大字</button>
+        <button onclick="fontsizeDecrease()">小字</button>
     </div>
 
 
 
     <script>
-        function showTime() {
+        function showTimeampm() {
             var date = new Date();
             var h = date.getHours(); // 0 - 23
             var m = date.getMinutes(); // 0 - 59
@@ -120,7 +122,26 @@
             document.getElementById("MyClockDisplay").textContent = time;
 
             setTimeout(showTime, 1000);
+        }
 
+        function showTime() {
+            var date = new Date();
+            var h = date.getHours(); // 0 - 23
+            var m = date.getMinutes(); // 0 - 59
+            var s = date.getSeconds(); // 0 - 59
+            var session = "AM";
+
+
+
+            h = (h < 10) ? "0" + h : h;
+            m = (m < 10) ? "0" + m : m;
+            s = (s < 10) ? "0" + s : s;
+
+            var time = h + ":" + m + ":" + s;
+            document.getElementById("MyClockDisplay").innerText = time;
+            document.getElementById("MyClockDisplay").textContent = time;
+
+            setTimeout(showTime, 1000);
         }
 
         function theme1() {
@@ -163,6 +184,19 @@
             }
         }
 
+        function fontsizeIncrease() {
+            let clock = document.getElementById("MyClockDisplay");
+            clock.style.setProperty("width", "100%");
+            clock.style.setProperty("font-size", "28vw");
+            clock.style.setProperty("margin", "20px");
+        }
+
+        function fontsizeDecrease() {
+            let clock = document.getElementById("MyClockDisplay");
+            clock.style.setProperty("width", "fit-content");
+            clock.style.setProperty("font-size", "60px");
+            clock.style.setProperty("margin", "0");
+        }
 
         showTime();
     </script>
