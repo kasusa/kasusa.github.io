@@ -78,6 +78,7 @@
             letter-spacing: 7px;
         }
     </style>
+    <script src="../src/js/NoSleep.min.js"></script>
 
 </head>
 
@@ -92,11 +93,30 @@
         <button onclick="openFullscreen()">全屏</button>
         <button onclick="fontsizeIncrease()">大字</button>
         <button onclick="fontsizeDecrease()">小字</button>
+        <button id="coffeebtn" onclick="coffee()">小字</button>
+
     </div>
 
 
 
     <script>
+        let coffeeOn = false;
+
+        function coffee() {
+            let btn = document.getElementById("coffeebtn");
+
+            if (coffeeOn == false) {
+                coffeeOn = true;
+                btn.style.backgroundColor = "#4BDD87";
+                noSleep.enable(); // keep the screen on!
+
+            } else {
+                coffeeOn = false;
+                btn.style.backgroundColor = "#EFEFEF";
+                noSleep.disable();
+            }
+        };
+
         function showTimeampm() {
             var date = new Date();
             var h = date.getHours(); // 0 - 23
