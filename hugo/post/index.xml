@@ -6,7 +6,26 @@
     <description>Recent content in Posts on KASUSA</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 04 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kasusa.github.io/hugo/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 22 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kasusa.github.io/hugo/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>win10 DPI FIX</title>
+      <link>https://kasusa.github.io/hugo/post/2021-6-22/</link>
+      <pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://kasusa.github.io/hugo/post/2021-6-22/</guid>
+      <description>Windows10 DPI Fix http://windows10-dpi-fix.xpexplorer.com/
+这个软件的功能是修复win10在缩放125%的情况下产生的字体模糊。
+他的原理是调用win7/8.1的缩放DPI，这个老的DPI是专门为电脑设计的。而win10当时有向移动端发展的想法，便用了一个新的缩放dpi，为了照顾手机的性能，缩放之后还会变模糊，我想这才是我真正讨厌缩放的原因吧。但是不缩放15寸小屏幕很瞎眼。
+这个应用真的很好地解决了我的缩放问题，在此推荐给所有人。</description>
+      <content>&lt;h2 id=&#34;windows10-dpi-fix&#34;&gt;Windows10 DPI Fix&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;http://windows10-dpi-fix.xpexplorer.com/&#34;&gt;http://windows10-dpi-fix.xpexplorer.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这个软件的功能是修复win10在缩放125%的情况下产生的字体模糊。&lt;/p&gt;
+&lt;p&gt;他的原理是调用win7/8.1的缩放DPI，这个老的DPI是专门为电脑设计的。而win10当时有向移动端发展的想法，便用了一个新的缩放dpi，为了照顾手机的性能，缩放之后还会变模糊，我想这才是我真正讨厌缩放的原因吧。但是不缩放15寸小屏幕很瞎眼。&lt;/p&gt;
+&lt;p&gt;这个应用真的很好地解决了我的缩放问题，在此推荐给所有人。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://tva1.sinaimg.cn/large/006rgJELgy1grqsxs460dj30d1060q4e.jpg&#34; alt=&#34;程序截图&#34;&gt;&lt;/p&gt;
+</content>
+    </item>
+    
     <item>
       <title>c#文件管理器、读取文件列表</title>
       <link>https://kasusa.github.io/hugo/post/csharp%E6%89%93%E5%BC%80%E6%8C%87%E5%AE%9A%E6%96%87%E4%BB%B6%E5%A4%B9%E5%92%8C%E9%80%89%E5%AE%9A%E6%96%87%E4%BB%B6/</link>
