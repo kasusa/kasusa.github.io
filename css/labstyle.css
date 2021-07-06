@@ -58,7 +58,9 @@ a:hover {
 }
 
 .ristrict {
-    max-width: 1200px;
+    /* max-width: 1200px; */
+    z-index: 999;
+    max-width: 824px;
     margin: auto;
 }
 
@@ -91,10 +93,10 @@ a:hover {
 
 .card {
     /* Add shadows to create the "card" effect */
-    /* background-color: white; */
-    width: 100%;
-    margin: 1.6%;
-    float: left;
+    border: 1px solid rgb(119, 18, 187);
+    width: 70%;
+    margin: 12px;
+    float: right;
     box-shadow: 2px 6px 25px 2px rgba(0, 0, 0, 0.192);
     transition: 0.4s;
     border-radius: 5px;
@@ -115,6 +117,7 @@ img {
 .card:hover {
     box-shadow: 4px 9px 25px 5px rgba(0, 0, 0, 0.363);
     color: white;
+    background-color: rgba(0, 0, 0, 0.774);
     transform: translate(0, -1rem);
 }
 
@@ -147,10 +150,32 @@ img {
     text-decoration: none;
 }
 
+.card a:hover {
+    color: rgb(247, 247, 247);
+    text-decoration: none;
+}
+
 @media only screen and (max-width: 425px) {
     .card {
         width: 95%;
         margin-top: 2em;
+    }
+    .lab_header {
+        display: none;
+    }
+    .ristrict {
+        display: none;
+    }
+    body {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: inherit;
+        background-color: #8357eb;
+        width: 100vw;
+        height: 100vh;
     }
 }
 

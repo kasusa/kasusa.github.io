@@ -14,21 +14,92 @@
     <!-- <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"> -->
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
+    <style>
+        @font-face {
+            src: url("https://www.axis-praxis.org/fonts/webfonts/MetaVariableDemo-Set.woff2") format("woff2");
+            font-family: "Meta";
+            font-style: normal;
+            font-weight: normal;
+        }
+        /*<!-- 字体添加： -->*/
+        
+        body {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: #8357eb;
+            width: 100vw;
+            height: 100vh;
+        }
+        
+        main {
+            transition: all 01s;
+            -webkit-text-stroke: 4px #d6f4f4;
+            font-variation-settings: "wght" 900, "ital" 1;
+            font-size: 13rem;
+            text-align: center;
+            color: transparent;
+            font-family: "Meta", sans-serif;
+            text-shadow: 10px 10px 0px #07bccc, 15px 15px 0px #e601c0, 20px 20px 0px #e9019a, 25px 25px 0px #f40468, 45px 45px 10px #482896;
+            cursor: pointer;
+        }
+        
+        main:hover {
+            font-variation-settings: "wght" 100, "ital" 1;
+            text-shadow: none;
+        }
+        /*添加一个好看的滚动条*/
+        
+         ::-webkit-scrollbar {
+            width: 10px;
+            height: 10px;
+        }
+        
+         ::-webkit-scrollbar-track {
+            background: #8e8c8c12;
+        }
+        
+         ::-webkit-scrollbar-thumb {
+            background: #2c2828a8;
+            border-radius: 0px;
+            border: 2px solid #ff00ea;
+        }
+        
+         ::-webkit-scrollbar-thumb:hover {
+            border: 2px solid #19ff50;
+            background-color: #3e3e3eb8;
+            /* 	background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%); */
+        }
+        /*仅仅是的卡片部分可以滚动*/
+        
+        .container {
+            height: 100%;
+            overflow-y: auto;
+        }
+        
+        body {
+            overflow: hidden;
+        }
+        
+        .lab_header {
+            z-index: 99999;
+        }
+    </style>
 </head>
 
 <body>
 
     <div id="lab_header">
         <div class="ristrict">
-            <h1 id="lab_header-title "><a href="#">Kasusa's laboratory</a></h1>
+            <main>Kasusa's Labtorary</main>
         </div>
-
     </div>
-    <div class=" non-ristrict sticky-top transparent_pink">
+    <!-- <div class=" non-ristrict sticky-top transparent_pink">
         <div class="ristrict">
             <nav class="navbar navbar-expand-sm navbar-dark ">
                 <span class="navbar-text text-uppercase"> <a href="index.html">To blog </a>||</span>
@@ -37,7 +108,7 @@
                 </ul>
             </nav>
         </div>
-    </div>
+    </div> -->
 
     <!--把新的卡放在这里！-->
     <div class="container">
@@ -53,7 +124,7 @@
             </a>
         </div>
 
-        <div class=" alicloud card">
+        <div class=" clock card">
             <a href="unimportant_sites/clock.html">
 
                 <img style="width: 100%; " src="https://tva4.sinaimg.cn/large/006rgJELgy1gqvx3p6hluj30bd0bdaa0.jpg" />
@@ -133,11 +204,7 @@
 
     </div>
 
-    <div id="footer">
-        <div class="container" style="color: aliceblue">
-            <span style="color: rgb(169, 255, 255)">@ </span>allrights reserved 2019
-        </div>
-    </div>
+
 
 </body>
 
