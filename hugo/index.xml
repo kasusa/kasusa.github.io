@@ -1555,16 +1555,12 @@ hello
       <pubDate>Thu, 01 Jan 1970 00:00:00 +0000</pubDate>
       
       <guid>https://kasusa.github.io/hugo/contact/</guid>
-      <description>联系我可以通过以下方式：
-email: tsogview@outlook.com
-steam: https://steamcommunity.com/id/kasusaland/
+      <description>我的tg频道：
 telegram: https://t.me/kasusaland
-battlenet: 白无常#51184</description>
-      <content>&lt;p&gt;联系我可以通过以下方式：&lt;/p&gt;
-&lt;p&gt;email: &lt;a href=&#34;mailto:tsogview@outlook.com&#34;&gt;tsogview@outlook.com&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;steam: &lt;a href=&#34;https://steamcommunity.com/id/kasusaland/&#34;&gt;https://steamcommunity.com/id/kasusaland/&lt;/a&gt;&lt;/p&gt;
+频道介绍里面有频道主的账号（就是我）</description>
+      <content>&lt;p&gt;我的tg频道：&lt;/p&gt;
 &lt;p&gt;telegram: &lt;a href=&#34;https://t.me/kasusaland&#34;&gt;https://t.me/kasusaland&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;battlenet: 白无常#51184&lt;/p&gt;
+&lt;p&gt;频道介绍里面有频道主的账号（就是我）&lt;/p&gt;
 </content>
     </item>
     
@@ -1574,22 +1570,11 @@ battlenet: 白无常#51184</description>
       <pubDate>Thu, 01 Jan 1970 00:00:00 +0000</pubDate>
       
       <guid>https://kasusa.github.io/hugo/links/</guid>
-      <description>你好，这里是kasusa。  kasusa有几个分开的博客，专注于不同的内容。
- 技术博客 生活娱乐 小实验室   友链
-  颜树人
+      <description>友链。   颜树人
 https://yantree.github.io/
   Ediel&amp;rsquo;s Archive https://edchdx-tm.pwcq.dev/
-   </description>
-      <content>&lt;h2 id=&#34;你好这里是kasusa&#34;&gt;你好，这里是kasusa。&lt;/h2&gt;
-&lt;hr&gt;
-&lt;p&gt;kasusa有几个分开的博客，专注于不同的内容。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://kasusa.github.io/hugo/&#34;&gt;技术博客&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://kasusaland.blogspot.com/&#34;&gt;生活娱乐&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://kasusa.github.io/lab&#34;&gt;小实验室&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;p&gt;友链&lt;/p&gt;
+  加入友链请想方设法联系我！ </description>
+      <content>&lt;h2 id=&#34;友链&#34;&gt;友链。&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;颜树人&lt;/p&gt;
@@ -1600,7 +1585,7 @@ https://yantree.github.io/
 &lt;a href=&#34;https://edchdx-tm.pwcq.dev/&#34;&gt;https://edchdx-tm.pwcq.dev/&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
+&lt;h3 id=&#34;加入友链请u想方设法u联系我&#34;&gt;加入友链请&lt;!-- raw HTML omitted --&gt;想方设法&lt;!-- raw HTML omitted --&gt;联系我！&lt;/h3&gt;
 </content>
     </item>
     
